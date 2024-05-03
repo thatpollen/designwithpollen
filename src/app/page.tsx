@@ -6,7 +6,6 @@ import Services from "@/components/ui/body/Services";
 import Footer from "@/components/ui/layout/Footer";
 import VerticalLines from "@/components/ui/assets/VerticalLines";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
-import FloatingEl from "@/components/ui/assets/FloatingEl";
 import Loader from "@/components/ui/assets/Loader";
 
 
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <>
     <Loader/>
-    <main>
+    <main className="cursor-none">
       <CustomCursor />
       <VerticalLines/>
       {/* <FloatingEl/> */}

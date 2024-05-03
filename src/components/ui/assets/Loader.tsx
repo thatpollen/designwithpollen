@@ -23,7 +23,7 @@ const loadingRef = useRef<HTMLDivElement>(null);
   }, [])
 
   return(
-    <div className="flex flex-col justify-center items-center w-screen h-screen fixed inset-0 z-[101] bg-black" ref={loadingRef}>
+    <div className="flex flex-col justify-center items-center w-screen h-screen fixed inset-0 z-[1002] bg-black opacity-100 visible transition-all duration-500" ref={loadingRef}>
       <h6 className="text-h6 font-medium uppercase">Pollen Chakma</h6>
       <span className="text-sm font-light opacity-[56%]">Designer (UX/UI) & Developer</span>
     </div>

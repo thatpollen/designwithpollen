@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const aeonik = localFont({
   src: [
@@ -56,6 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-K33NPCH"/>
       <body className={aeonik.className}>
         <SmoothScroll>{children}</SmoothScroll>
       </body>

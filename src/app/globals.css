@@ -27,9 +27,33 @@ body{
   color: var(--color-white);
 }
 
-/* .custom__cursor {
-  transition: left 0.04s ease-in-out, top 0.04s ease-in-out;
-} */
+/**
+* custom__cursor 
+*/
+.cursor_dot{
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-white);
+  mix-blend-mode: difference;
+}
+
+.cursor_outline{
+  width: 60px;
+  height: 60px;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor_dot, .cursor_outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1001;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
 
 /**
 * gradient line
@@ -37,7 +61,7 @@ body{
 .gradient_line{
   flex-grow: 0;
   flex-shrink: 0;
-  animation: gradient 8s linear infinite;
+  animation: gradient 12s linear infinite;
 }
 
 @keyframes gradient {
