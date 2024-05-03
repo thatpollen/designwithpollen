@@ -94,11 +94,13 @@ export default function Navbar() {
               Servies
             </Link>
 
-            <NextLink href="/contact" className="whatsapp px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen translate-x-[8px] transition-all duration-500">
-              <span>
+            <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
+              <a className="whatsapp px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen translate-x-[8px] transition-all duration-500" target="_blank">
+                <span>
                 <WhatsApp/>
-              </span>
-              WhatsApp
+                </span>
+                WhatsApp
+              </a>
             </NextLink>
           </div>
 

@@ -21,7 +21,7 @@ export default function CustomCursor() {
       cursorOutline.animate({
         left: `${posX}px`,
         top: `${posY}px`
-      }, {duration: 500, fill: 'forwards'})
+      }, {duration: 600, fill: 'forwards'})
 
       cursorDot.style.opacity = "1"
       cursorOutline.style.opacity = "1"

@@ -20,7 +20,25 @@ export default function Works() {
           </div>
         </SmallContainer>
         <Container>
-          <div></div>
+          <div className="grid grid-cols-4 gap-6">
+            {/* <div>
+              <div className="wrapper overflow-hidden relative rounded-xl">
+                <figure className="aspect-[2/3] relative cursor-pointer"></figure>
+                <div className="flex flex-col justify-end items-start p-4 overflow-hidden absolute left-0 top-0 right-0 bg-[rgba(47,53,66,0.72)]">
+                </div>
+              </div>
+              <div className="modal fixed inset-0 z-[1000]">
+                <Container>
+                  <div className="flex ">
+
+                  </div>
+                </Container>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div> */}
+          </div>
         </Container>
       </div>
     </section>
