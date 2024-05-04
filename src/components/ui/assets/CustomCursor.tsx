@@ -56,9 +56,9 @@ export default function CustomCursor() {
   }, [])
 
   return (
-    <>
+    <div className="md:hidden">
       <div className="cursor_dot" data-cursor-dot></div>
       <div className="cursor_outline" data-cursor-outline></div>
-    </>
+    </div>
   );
 }

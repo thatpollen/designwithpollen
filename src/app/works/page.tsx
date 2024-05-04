@@ -1,4 +1,4 @@
-import {client} from '@/utils/sanity/lib/client'
+import {client} from '../../../sanity/lib/client'
 
 type Post = {
   _id: string

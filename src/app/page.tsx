@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
     <Loader/>
-    <main className="cursor-none">
+    <main className="cursor-none md:cursor-auto">
       <CustomCursor />
       <VerticalLines/>
       {/* <FloatingEl/> */}
@@ -24,7 +24,6 @@ export default function Home() {
       <Services /> 
       <Footer />
     </main>
-     
     </>
   );
 }

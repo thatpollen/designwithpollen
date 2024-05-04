@@ -44,7 +44,65 @@ export default function Navbar() {
     <nav className="sticky top-0 left-0 right-0 z-[100] bg-dark">
      <div className="py-5 border-b border-[rgba(255,255,255,0.08)]">
       <Container>
-        <div className="flex justify-between items-center">
+        <div className="hidden justify-between items-center md:flex">
+          <NextLink 
+            href="/"
+            className="w-[33.33%] transition-all duration-[450ms]">
+            <div>
+                Eet
+            </div>
+          </NextLink>
+
+          <div className="flex justify-start items-center gap-2 px-1.5 py-1 bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px]">
+            <Link   
+              // activeClass="nav_active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000} 
+              className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration  hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden">
+              About          
+            </Link>
+
+            <Link 
+              // activeClass="nav_active"
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000} 
+              className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden">
+              Work          
+            </Link>
+
+            <Link 
+              // activeClass="nav_active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000} 
+              className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden">
+              Servies
+            </Link>
+
+            <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
+              <a className="px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen grow-0 shrink-0" target="_blank">
+                <span>
+                <WhatsApp/>
+                </span>
+                <span className="xs:hidden">
+                  WhatsApp
+                </span>
+              </a>
+            </NextLink>
+          </div>
+
+          <div className="w-[33.33%]"></div>
+        </div>
+
+        <div className="flex justify-between items-center md:hidden">
           <NextLink 
             href="/"
             className="nav_left w-[33.33%] transition-all duration-[450ms]">
@@ -95,7 +153,7 @@ export default function Navbar() {
             </Link>
 
             <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
-              <a className="whatsapp px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen translate-x-[8px] transition-all duration-500" target="_blank">
+              <a className="whatsapp px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen grow-0 shrink-0 translate-x-[8px] transition-all duration-500" target="_blank">
                 <span>
                 <WhatsApp/>
                 </span>
