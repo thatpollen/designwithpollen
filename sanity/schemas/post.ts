@@ -251,7 +251,7 @@ export const post = {
     select: {
       title: "title",
       author: "author.name",
-      media: "mainImage",
+      media: "thumbnail",
     },
     prepare(selection: Selection) {
       const { author } = selection;
