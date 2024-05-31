@@ -44,7 +44,7 @@ export default async function Home() {
         <About />
 
         <Works>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-4 gap-6 md:grid-cols-2 md:grid-rows-2 xs:grid-cols-1 xs:grid-rows-4">
             {projects?.map((project: any) => {
               // console.log(project);
               return (
