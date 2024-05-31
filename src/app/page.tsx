@@ -8,22 +8,78 @@ import VerticalLines from "@/components/ui/assets/VerticalLines";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
 import Loader from "@/components/ui/assets/Loader";
 
+import NextImage from "next/image";
+import NextLink from "next/link";
+import { client } from "../../sanity/lib/client";
+import { unstable_noStore as noStore } from "next/cache";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  noStore();
+
+  const query = `*[_type == "post"] | order(_createdAt asc) {
+  _id,
+  title,
+  slug,
+  thumbnail{
+    asset->{url, metadata},
+    alt
+  },
+}`;
+
+  const projects = await client.fetch(query, { params: { cache: "no-store" } });
+
+  // console.log(projects);
+
   return (
     <>
-    <Loader/>
-    <main className="cursor-none md:cursor-auto">
-      <CustomCursor />
-      <VerticalLines/>
-      {/* <FloatingEl/> */}
-      <Navbar />
-      <Hero />
-      <About />
-      <Works />   
-      <Services /> 
-      <Footer />
-    </main>
+      <Loader />
+      <main>
+        <CustomCursor />
+        <VerticalLines />
+        {/* <FloatingEl/> */}
+        <Navbar />
+        <Hero />
+        <About />
+
+        <Works>
+          <div className="grid grid-cols-4 gap-6">
+            {projects?.map((project: any) => {
+              // console.log(project);
+              return (
+                <div key={project?._id}>
+                  <div className="wrapper overflow-hidden relative rounded-xl">
+                    <NextLink
+                      href={`/project/${project?.slug?.current}`}
+                      scroll={false}
+                    >
+                      <figure className="project_img aspect-[2/3] relative cursor-pointer transition-transform duration-200 ease-[cubic-bezier(0.455,0.03,0.515,0.955)]">
+                        <NextImage
+                          src={`${project?.thumbnail?.asset?.url}`}
+                          alt={project?.thumbnail?.alt}
+                          width={1024}
+                          height={1536}
+                          className="w-auto h-auto object-cover"
+                          priority
+                        />
+                      </figure>
+                      <div className="project_name flex flex-col justify-end items-start p-4 overflow-hidden absolute left-0 top-auto bottom-0 right-0 bg-[rgba(47,53,66,0.72)] opacity-0 transition-opacity duration-200 ease-linear">
+                        <h6 className="text-h6 font-light leading-[1.3] text-white">
+                          {project?.title}
+                        </h6>
+                      </div>
+                    </NextLink>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </Works>
+
+        <Services />
+        <Footer />
+      </main>
     </>
   );
 }

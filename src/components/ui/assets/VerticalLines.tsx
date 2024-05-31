@@ -1,7 +1,7 @@
 import Container from "../layout/Container";
 
 export default function VerticalLines() {
-  return(
+  return (
     <div className="mx-auto fixed inset-0 z-[-1]">
       <Container>
         <div className="flex justify-between items-stretch">
@@ -11,5 +11,5 @@ export default function VerticalLines() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

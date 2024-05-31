@@ -19,7 +19,7 @@
   --color-white: #ffffff;
 }
 
-body{
+body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -30,26 +30,27 @@ body{
 /**
 * custom__cursor 
 */
-.cursor_dot{
+.cursor_dot {
   width: 16px;
   height: 16px;
   background-color: var(--color-white);
   mix-blend-mode: difference;
 }
 
-.cursor_outline{
+.cursor_outline {
   width: 60px;
   height: 60px;
   border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 
-.cursor_dot, .cursor_outline{
+.cursor_dot,
+.cursor_outline {
   position: fixed;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 1001;
+  z-index: 1000;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
@@ -58,7 +59,7 @@ body{
 /**
 * gradient line
 */
-.gradient_line{
+.gradient_line {
   flex-grow: 0;
   flex-shrink: 0;
   animation: gradient 12s linear infinite;
@@ -76,14 +77,29 @@ body{
 /**
 * navbar
 */
-.nav_middle{
-  transition: width .45s cubic-bezier(.6, .6, 0, 1);
+.nav_middle {
+  transition: width 0.45s cubic-bezier(0.6, 0.6, 0, 1);
+}
+
+/**
+* project
+*/
+.project_name {
+  pointer-events: none;
+}
+
+.wrapper:hover .project_img {
+  transform: scale(1.16);
+}
+
+.wrapper:hover .project_name {
+  opacity: 1;
 }
 
 /**
 * responsive
 */
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .cursor-remove {
     transform: scale(0);
   }
