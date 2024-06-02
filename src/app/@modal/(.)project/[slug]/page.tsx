@@ -58,10 +58,10 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
   figmaProjectLink,
   projectYear,
   liveLink,
-}
+}[0]
 `;
 
-  const project = await client.fetch(query, {
+  const post = await client.fetch(query, {
     params: { cache: "no-store" },
     postSlug,
   });
@@ -71,17 +71,17 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
       <div>
         <div className="flex flex-col gap-4 p-8 text-darkBlue">
           <h2 className="text-h5 leading-[1.4] text-dark font-bold">
-            {project[0]?.title}
+            {post?.title}
           </h2>
           <div className="flex justify-between items-center gap-4 py-8">
             <span>PROJECT YEAR</span>
             <div className="w-1/2 h-px max-w-full bg-[rgba(0,0,0,0.16)]"></div>
-            <span>{project[0]?.projectYear}</span>
+            <span>{post?.projectYear}</span>
           </div>
         </div>
         <NextImage
-          src={project[0]?.introImage?.asset?.url}
-          alt={project[0]?.introImage?.alt}
+          src={post?.introImage?.asset?.url}
+          alt={post?.introImage?.alt}
           width={1920}
           height={1024}
           className="w-auto h-auto max-w-full"
@@ -89,11 +89,11 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
           <h6 className="text-sm font-bold">/Overview</h6>
-          <p className="text-charcoal">{project[0]?.projectIntro}</p>
+          <p className="text-charcoal">{post?.projectIntro}</p>
         </div>
         <NextImage
-          src={project[0]?.firstImage?.asset?.url}
-          alt={project[0]?.firstImage?.alt}
+          src={post?.firstImage?.asset?.url}
+          alt={post?.firstImage?.alt}
           width={1920}
           height={1024}
           className="w-auto h-auto max-w-full py-4"
@@ -101,11 +101,11 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
           <h6 className="text-sm font-bold">/Goal</h6>
-          <p className="text-charcoal">{project[0]?.projectGoal}</p>
+          <p className="text-charcoal">{post?.projectGoal}</p>
         </div>
         <NextImage
-          src={project[0]?.secondImage?.asset?.url}
-          alt={project[0]?.secondImage?.alt}
+          src={post?.secondImage?.asset?.url}
+          alt={post?.secondImage?.alt}
           width={2201}
           height={2341}
           className="w-auto h-auto max-w-full py-4"
@@ -113,52 +113,58 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
           <h6 className="text-sm font-bold">/Solution</h6>
-          <p className="text-charcoal">{project[0]?.projectSolution}</p>
+          <p className="text-charcoal">{post?.projectSolution}</p>
         </div>
         <NextImage
-          src={project[0]?.thirdImage?.asset?.url}
-          alt={project[0]?.thirdImage?.alt}
+          src={post?.thirdImage?.asset?.url}
+          alt={post?.thirdImage?.alt}
           width={1920}
           height={1024}
           className="w-auto h-auto max-w-full py-4"
         />
         <NextImage
-          src={project[0]?.fourthImage?.asset?.url}
-          alt={project[0]?.fourthImage?.alt}
+          src={post?.fourthImage?.asset?.url}
+          alt={post?.fourthImage?.alt}
           width={1920}
           height={1024}
           className="w-auto h-auto max-w-full py-4"
         />
         <NextImage
-          src={project[0]?.fifthImage?.asset?.url}
-          alt={project[0]?.fifthImage?.alt}
+          src={post?.fifthImage?.asset?.url}
+          alt={post?.fifthImage?.alt}
           width={1920}
           height={1024}
           className="w-auto h-auto max-w-full py-4"
         />
-        <NextImage
-          src={project[0]?.sixthImage?.asset?.url}
-          alt={project[0]?.sixthImage?.alt}
-          width={1920}
-          height={1024}
-          className="w-auto h-auto max-w-full py-4"
-        />
-        <NextImage
-          src={project[0]?.seventhImage?.asset?.url}
-          alt={project[0]?.seventhImage?.alt}
-          width={1920}
-          height={1024}
-          className="w-auto h-auto max-w-full py-4"
-        />
-        <NextImage
-          src={project[0]?.eighthImage?.asset?.url}
-          alt={project[0]?.eighthImage?.alt}
-          width={1920}
-          height={1024}
-          className="w-auto h-auto max-w-full py-4"
-        />
+        {post?.sixthImage?.asset?.url && (
+          <NextImage
+            src={post?.sixthImage?.asset?.url}
+            alt={post?.sixthImage?.alt}
+            width={1920}
+            height={1024}
+            className="w-auto h-auto max-w-full py-4"
+          />
+        )}
+        {post?.seventhImage?.asset?.url && (
+          <NextImage
+            src={post?.seventhImage?.asset?.url}
+            alt={post?.seventhImage?.alt}
+            width={1920}
+            height={1024}
+            className="w-auto h-auto max-w-full py-4"
+          />
+        )}
+        {post?.eighthImage?.asset?.url && (
+          <NextImage
+            src={post?.eighthImage?.asset?.url}
+            alt={post?.eighthImage?.alt}
+            width={1920}
+            height={1024}
+            className="w-auto h-auto max-w-full py-4"
+          />
+        )}
         <div className="flex flex-col gap-4 p-8 text-darkBlue">
-          <NextLink href={`${project[0]?.figmaProjectLink}`} legacyBehavior>
+          <NextLink href={`${post?.figmaProjectLink}`} legacyBehavior>
             <a
               className="flex justify-between items-center p-6 bg-dark rounded-xl"
               target="_blank"

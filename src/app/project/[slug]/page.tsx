@@ -10,7 +10,6 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
   noStore();
 
   const postSlug = params.slug;
-  // console.log(postSlug);
 
   const query = `
 *[_type == "post" && slug.current == $postSlug] {
@@ -62,7 +61,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
 }
 `;
 
-  const project = await client.fetch(query, {
+  const post = await client.fetch(query, {
     params: { cache: "no-store" },
     postSlug,
   });
@@ -84,17 +83,17 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
               </div> */}
               <div className="flex flex-col gap-4 p-8 text-darkBlue">
                 <h2 className="text-h5 leading-[1.4] text-dark font-bold">
-                  {project[0]?.title}
+                  {post[0]?.title}
                 </h2>
                 <div className="flex justify-between items-center gap-4 py-8">
                   <span>PROJECT YEAR</span>
                   <div className="w-1/2 h-px max-w-full bg-[rgba(0,0,0,0.16)]"></div>
-                  <span>{project[0]?.projectYear}</span>
+                  <span>{post[0]?.projectYear}</span>
                 </div>
               </div>
               <NextImage
-                src={project[0]?.introImage?.asset?.url}
-                alt={project[0]?.introImage?.alt}
+                src={post[0]?.introImage?.asset?.url}
+                alt={post[0]?.introImage?.alt}
                 width={1920}
                 height={1024}
                 className="w-auto h-auto max-w-full"
@@ -102,11 +101,11 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Overview</h6>
-                <p className="text-charcoal">{project[0]?.projectIntro}</p>
+                <p className="text-charcoal">{post[0]?.projectIntro}</p>
               </div>
               <NextImage
-                src={project[0]?.firstImage?.asset?.url}
-                alt={project[0]?.firstImage?.alt}
+                src={post[0]?.firstImage?.asset?.url}
+                alt={post[0]?.firstImage?.alt}
                 width={1920}
                 height={1024}
                 className="w-auto h-auto max-w-full py-4"
@@ -114,11 +113,11 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Goal</h6>
-                <p className="text-charcoal">{project[0]?.projectGoal}</p>
+                <p className="text-charcoal">{post[0]?.projectGoal}</p>
               </div>
               <NextImage
-                src={project[0]?.secondImage?.asset?.url}
-                alt={project[0]?.secondImage?.alt}
+                src={post[0]?.secondImage?.asset?.url}
+                alt={post[0]?.secondImage?.alt}
                 width={2201}
                 height={2341}
                 className="w-auto h-auto max-w-full py-4"
@@ -126,55 +125,52 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Solution</h6>
-                <p className="text-charcoal">{project[0]?.projectSolution}</p>
+                <p className="text-charcoal">{post[0]?.projectSolution}</p>
               </div>
               <NextImage
-                src={project[0]?.thirdImage?.asset?.url}
-                alt={project[0]?.thirdImage?.alt}
+                src={post[0]?.thirdImage?.asset?.url}
+                alt={post[0]?.thirdImage?.alt}
                 width={1920}
                 height={1024}
                 className="w-auto h-auto max-w-full py-4"
               />
               <NextImage
-                src={project[0]?.fourthImage?.asset?.url}
-                alt={project[0]?.fourthImage?.alt}
+                src={post[0]?.fourthImage?.asset?.url}
+                alt={post[0]?.fourthImage?.alt}
                 width={1920}
                 height={1024}
                 className="w-auto h-auto max-w-full py-4"
               />
               <NextImage
-                src={project[0]?.fifthImage?.asset?.url}
-                alt={project[0]?.fifthImage?.alt}
+                src={post[0]?.fifthImage?.asset?.url}
+                alt={post[0]?.fifthImage?.alt}
                 width={1920}
                 height={1024}
                 className="w-auto h-auto max-w-full py-4"
               />
               <NextImage
-                src={project[0]?.sixthImage?.asset?.url}
-                alt={project[0]?.sixthImage?.alt}
+                src={post[0]?.sixthImage?.asset?.url}
+                alt={post[0]?.sixthImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className={`${post[0]?.sixthImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
               />
               <NextImage
-                src={project[0]?.seventhImage?.asset?.url}
-                alt={project[0]?.seventhImage?.alt}
+                src={post[0]?.seventhImage?.asset?.url}
+                alt={post[0]?.seventhImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className={`${post[0]?.seventhImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
               />
               <NextImage
-                src={project[0]?.eighthImage?.asset?.url}
-                alt={project[0]?.eighthImage?.alt}
+                src={post[0]?.eighthImage?.asset?.url}
+                alt={post[0]?.eighthImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className={`${post[0]?.eighthImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue">
-                <NextLink
-                  href={`${project[0]?.figmaProjectLink}`}
-                  legacyBehavior
-                >
+                <NextLink href={`${post[0]?.figmaProjectLink}`} legacyBehavior>
                   <a
                     className="flex justify-between items-center p-6 bg-dark rounded-xl"
                     target="_blank"
@@ -198,7 +194,6 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 </NextLink>
               </div>
             </div>
-            <div className="overlay w-full h-full absolute inset-0 z-[10]"></div>
           </div>
         </Container>
       </div>
