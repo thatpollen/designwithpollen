@@ -10,6 +10,7 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import { useRouter, usePathname } from "next/navigation";
+import { transitionClasses } from "@/lib/transitions";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -19,20 +20,18 @@ export default function Modal({ children }: { children: React.ReactNode }) {
   if (pathname === "/") return null;
 
   return (
-    <Transition show={true} as={Fragment}>
-      <Dialog as="div" className="relative z-[1001]" onClose={handleClose}>
+    <Transition appear show={true} as={Fragment}>
+      <Dialog
+        as="div"
+        className="relative z-[1001]"
+        onClose={handleClose}
+        // role="dialog"
+        data-lenis-prevent
+      >
         <div className="s-modal flex justify-end items gap-4 fixed inset-0 z-[1001]">
           <Container>
             <div className="flex justify-end items-center py-6 w-full h-full">
-              <TransitionChild
-                as={Fragment}
-                enter="transition-opacity ease-out duration-500"
-                enterFrom="opacity-0 transform-[scale(80%)]"
-                enterTo="opacity-100 transform-[scale(100%)]"
-                leave="transition-opacity ease-in duration-300"
-                leaveFrom="opacity-100 transform-[scale(100%)]"
-                leaveTo="opacity-0 transform-[scale(80%)]"
-              >
+              <TransitionChild as={Fragment} {...transitionClasses}>
                 <DialogPanel
                   data-lenis-prevent
                   as="div"

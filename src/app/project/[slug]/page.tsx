@@ -62,7 +62,10 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
 `;
 
   const post = await client.fetch(query, {
-    params: { cache: "no-store" },
+    params: {
+      // cache: "no-store",
+      next: { revalidate: 3 },
+    },
     postSlug,
   });
 

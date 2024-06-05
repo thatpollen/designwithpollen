@@ -28,14 +28,19 @@ export default async function Home() {
   },
 }`;
 
-  const posts = await client.fetch(query, { params: { cache: "no-store" } });
+  const posts = await client.fetch(query, {
+    params: {
+      // cache: "no-store",
+      next: { revalidate: 3 },
+    },
+  });
 
   return (
     <>
       <Loader />
       <main>
         <CustomCursor />
-        <VerticalLines />
+        {/* <VerticalLines /> */}
         {/* <FloatingEl/> */}
         <Navbar />
         <Hero />
