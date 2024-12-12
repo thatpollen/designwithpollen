@@ -156,23 +156,35 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 alt={post[0]?.sixthImage?.alt}
                 width={1920}
                 height={1024}
-                className={`${post[0]?.sixthImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
+                className={`${
+                  post[0]?.sixthImage?.asset?.url
+                    ? "w-auto h-auto max-w-full py-4"
+                    : "hidden"
+                }`}
               />
               <NextImage
                 src={post[0]?.seventhImage?.asset?.url}
                 alt={post[0]?.seventhImage?.alt}
                 width={1920}
                 height={1024}
-                className={`${post[0]?.seventhImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
+                className={`${
+                  post[0]?.seventhImage?.asset?.url
+                    ? "w-auto h-auto max-w-full py-4"
+                    : "hidden"
+                }`}
               />
               <NextImage
                 src={post[0]?.eighthImage?.asset?.url}
                 alt={post[0]?.eighthImage?.alt}
                 width={1920}
                 height={1024}
-                className={`${post[0]?.eighthImage?.asset?.url ? "w-auto h-auto max-w-full py-4" : "hidden"}`}
+                className={`${
+                  post[0]?.eighthImage?.asset?.url
+                    ? "w-auto h-auto max-w-full py-4"
+                    : "hidden"
+                }`}
               />
-              <div className="flex flex-col gap-4 p-8 text-darkBlue">
+              {/* <div className="flex flex-col gap-4 p-8 text-darkBlue">
                 <NextLink href={`${post[0]?.figmaProjectLink}`} legacyBehavior>
                   <a
                     className="flex justify-between items-center p-6 bg-dark rounded-xl"
@@ -195,7 +207,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                     </span>
                   </a>
                 </NextLink>
-              </div>
+              </div> */}
             </div>
           </div>
         </Container>

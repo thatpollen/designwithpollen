@@ -166,7 +166,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             className="w-auto h-auto max-w-full py-4"
           />
         )}
-        <div className="flex flex-col gap-4 p-8 text-darkBlue">
+        {/* <div className="flex flex-col gap-4 p-8 text-darkBlue">
           <NextLink href={`${post?.figmaProjectLink}`} legacyBehavior>
             <a
               className="flex justify-between items-center p-6 bg-dark rounded-xl"
@@ -189,7 +189,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
               </span>
             </a>
           </NextLink>
-        </div>
+        </div> */}
       </div>
     </Modal>
   );
