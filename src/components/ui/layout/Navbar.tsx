@@ -142,7 +142,7 @@ export default function Navbar() {
                 Work
               </Link>
 
-              <Link
+{/*               <Link
                 // activeClass="nav_active"
                 to="services"
                 spy={true}
@@ -152,7 +152,7 @@ export default function Navbar() {
                 className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
                 Servies
-              </Link>
+              </Link> */}
 
               <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
                 <a
