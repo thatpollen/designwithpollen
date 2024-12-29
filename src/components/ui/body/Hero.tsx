@@ -11,7 +11,7 @@ export default function Hero() {
               Hi 👋, I&apos;m Pollen, a freelance
               <span className="font-bold text-limeGreen border-b border-limeGreen">
                 {" "}
-                Designer (UX/UI) & Developer
+                Product Designer (UX/UI)
               </span>{" "}
               with over 9 years of experience.
             </h1>
