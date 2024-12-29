@@ -24,7 +24,8 @@ export default function Navbar() {
         navLeft.style.transform = "translateX(-20px)";
         navLeft.style.opacity = "0";
       } else {
-        navMiddle.style.width = "248px";
+        // navMiddle.style.width = "248px";
+        navMiddle.style.width = "160px";
         whatsapp.style.transform = "translateX(8px)";
         navLeft.style.transform = "translateX(0px)";
         navLeft.style.opacity = "1";
@@ -117,7 +118,8 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max">
+{/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
+            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[160px] max-w-max">
               <Link
                 // activeClass="nav_active"
                 to="about"
