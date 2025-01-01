@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     title: "Freelance Designer (UX/UI) & Development | Designwithpollen.com",
     description:
       "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
-    // url: "https://designwithpollen.com",
-    url: "https://designwithpollen.vercel.app",
+    url: "https://designwithpollen.com",
+    // url: "https://designwithpollen.vercel.app",
     siteName: "Design with Pollen",
     images: {
       url: "/opengraph-image.png",
