@@ -24,7 +24,7 @@ export default function Loader() {
 
   return (
     <div
-      className="flex flex-col justify-center items-center w-screen h-screen fixed inset-0 z-[1002] bg-black opacity-100 visible transition-all duration-500"
+      className="flex flex-col justify-center items-center w-screen h-screen fixed inset-0 z-[1003] bg-black opacity-100 visible transition-all duration-500"
       ref={loadingRef}
     >
       <h6 className="text-h6 font-medium uppercase">Pollen Chakma</h6>
