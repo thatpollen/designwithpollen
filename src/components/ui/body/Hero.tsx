@@ -13,7 +13,7 @@ export default function Hero() {
                 {" "}
                 Product Designer (UX/UI)
               </span>{" "}
-              with over 9 years of experience.
+              with over 10 years of experience.
             </h1>
           </div>
         </SmallContainer>
