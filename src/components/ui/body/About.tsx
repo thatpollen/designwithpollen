@@ -47,7 +47,7 @@ export default function About() {
                 className="text-h5 font-normal xs:text-h6"
                 ref={elementsToSplitRef}
               >
-                I&apos;m a UI/UX enthusiast with over 9 years of experience,
+                I&apos;m a UI/UX enthusiast with over 10 years of experience,
                 specializing in web development. I craft sleek, engaging
                 websites with a focus on user experience. Every site I build is
                 not just visually appealing but also interactive and
