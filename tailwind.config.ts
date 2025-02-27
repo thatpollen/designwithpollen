@@ -26,8 +26,8 @@ const config: Config = {
       xs: { max: "475px" },
       // => @media (max-width: 475px) { ... }
     },
-    
-   colors: {
+
+    colors: {
       midGray: "var(--color-mid-gray)",
       silver: "var(--silver)",
       orangeRed: "var(--color-orange-red)",
@@ -42,15 +42,15 @@ const config: Config = {
       limeGreen: "var(--color-lime-green)",
       DarkLimeGreen: "var(--color-dark-lime-green)",
       white: "var(--color-white)",
-   },
-   
-   fontSize: {
+    },
+
+    fontSize: {
       xs: ["0.75rem", "1rem"],
       // 12px 16px
 
       "extra-sm": ["0.815rem", "1.15rem"],
       // 13.04px 18.4px
-      
+
       sm: ["0.875rem", "1.25rem"],
       // 14px 20px
 
@@ -74,7 +74,7 @@ const config: Config = {
 
       h2: ["3.5rem", "1.1"],
       // 56px 1.1
-   }
+    },
   },
   plugins: [],
 };

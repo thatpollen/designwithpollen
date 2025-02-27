@@ -12,6 +12,7 @@ import NextImage from "next/image";
 import NextLink from "next/link";
 import { client } from "../../sanity/lib/client";
 import { unstable_noStore as noStore } from "next/cache";
+import React from "react";
 
 export const dynamic = "force-dynamic";
 
@@ -79,7 +80,7 @@ export default async function Home() {
           </div>
         </Works>
 
-{/*         <Services /> */}
+        {/*         <Services /> */}
         <Footer />
       </main>
     </>

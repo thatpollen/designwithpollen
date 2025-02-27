@@ -87,7 +87,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.introImage?.alt}
           width={1920}
           height={1024}
-          className="w-auto h-auto max-w-full"
+          className="w-full h-auto max-w-full"
           priority
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -99,7 +99,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.firstImage?.alt}
           width={1920}
           height={1024}
-          className="w-auto h-auto max-w-full py-4"
+          className="w-fullauto max-w-full py-4"
           priority
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -111,7 +111,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.secondImage?.alt}
           width={2201}
           height={2341}
-          className="w-auto h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full py-4"
           priority
         />
         <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -123,21 +123,21 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.thirdImage?.alt}
           width={1920}
           height={1024}
-          className="w-auto h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full py-4"
         />
         <NextImage
           src={post?.fourthImage?.asset?.url}
           alt={post?.fourthImage?.alt}
           width={1920}
           height={1024}
-          className="w-auto h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full py-4"
         />
         <NextImage
           src={post?.fifthImage?.asset?.url}
           alt={post?.fifthImage?.alt}
           width={1920}
           height={1024}
-          className="w-auto h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full py-4"
         />
         {post?.sixthImage?.asset?.url && (
           <NextImage
@@ -145,7 +145,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.sixthImage?.alt}
             width={1920}
             height={1024}
-            className="w-auto h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full py-4"
           />
         )}
         {post?.seventhImage?.asset?.url && (
@@ -154,7 +154,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.seventhImage?.alt}
             width={1920}
             height={1024}
-            className="w-auto h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full py-4"
           />
         )}
         {post?.eighthImage?.asset?.url && (
@@ -163,7 +163,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.eighthImage?.alt}
             width={1920}
             height={1024}
-            className="w-auto h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full py-4"
           />
         )}
         {/* <div className="flex flex-col gap-4 p-8 text-darkBlue">
@@ -178,7 +178,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
                   alt="figma"
                   width={32}
                   height={32}
-                  className="w-auto h-auto max-w-full object-cover"
+                  className="w-full h-auto max-w-full object-cover"
                 />
                 <span className="text-xl font-bold text-white">
                   Figma Design

@@ -28,31 +28,31 @@ export default function Modal({ children }: { children: React.ReactNode }) {
         // role="dialog"
         data-lenis-prevent
       >
-        <div className="s-modal flex justify-end items gap-4 fixed inset-0 z-[1001]">
-          <Container>
-            <div className="flex justify-end items-center py-6 w-full h-full">
-              <TransitionChild as={Fragment} {...transitionClasses}>
-                <DialogPanel
-                  data-lenis-prevent
-                  as="div"
-                  className="modal flex flex-col w-full h-full max-w-[520px] overflow-y-auto relative z-[11] bg-white rounded-lg"
-                >
-                  <div className="close_btn flex justify-end items-stretch py-6 px-8 sticky top-0 z-[12] bg-white border-b border-[rgba(0,0,0,0.08)]">
-                    <button
-                      onClick={handleClose}
-                      className="flex justify-start items-center gap-2 cursor-pointer"
-                    >
-                      <span className="text-black">Close</span>
-                      <span>
-                        <Close />
-                      </span>
-                    </button>
-                  </div>
-                  {children}
-                </DialogPanel>
-              </TransitionChild>
-            </div>
-          </Container>
+        <div className="s-modal flex justify-center items gap-4 fixed inset-0 z-[1001]">
+          {/* <Container> */}
+          <div className="flex justify-center items-center px-12 sm:px-6 py-12 sm:py-6 w-full h-full">
+            <TransitionChild as={Fragment} {...transitionClasses}>
+              <DialogPanel
+                data-lenis-prevent
+                as="div"
+                className="modal flex flex-col w-full h-full max-w-[1024px] overflow-y-auto relative z-[11] bg-white rounded-lg"
+              >
+                <div className="close_btn flex justify-end items-stretch py-6 px-8 sticky top-0 z-[12] bg-white border-b border-[rgba(0,0,0,0.08)]">
+                  <button
+                    onClick={handleClose}
+                    className="flex justify-start items-center gap-2 cursor-pointer"
+                  >
+                    <span className="text-black">Close</span>
+                    <span>
+                      <Close />
+                    </span>
+                  </button>
+                </div>
+                {children}
+              </DialogPanel>
+            </TransitionChild>
+          </div>
+          {/* </Container> */}
         </div>
       </Dialog>
     </Transition>

@@ -75,7 +75,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
       <div className="w-full h-full">
         <Container>
           <div className="flex justify-center w-full h-full">
-            <div className="modal flex flex-col w-full h-full max-w-[520px] relative z-[11] bg-white">
+            <div className="modal flex flex-col w-full h-full max-w-[1024px] relative z-[11] bg-white">
               {/* <div className="close_btn flex justify-end items-stretch py-6 px-8 sticky top-0 z-[12] bg-white border-b border-[rgba(0,0,0,0.08)]">
                 <div className="flex justify-start items-center gap-2 cursor-pointer">
                   <span className="text-black">Close</span>
@@ -99,7 +99,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 alt={post[0]?.introImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full"
+                className="w-full h-auto max-w-full"
                 priority
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -111,7 +111,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 alt={post[0]?.firstImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className="w-full h-auto max-w-full py-4"
                 priority
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -123,7 +123,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 alt={post[0]?.secondImage?.alt}
                 width={2201}
                 height={2341}
-                className="w-auto h-auto max-w-full py-4"
+                className="w-full h-auto max-w-full py-4"
                 priority
               />
               <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
@@ -135,21 +135,21 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 alt={post[0]?.thirdImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className="w-full h-auto max-w-full py-4"
               />
               <NextImage
                 src={post[0]?.fourthImage?.asset?.url}
                 alt={post[0]?.fourthImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className="w-full h-auto max-w-full py-4"
               />
               <NextImage
                 src={post[0]?.fifthImage?.asset?.url}
                 alt={post[0]?.fifthImage?.alt}
                 width={1920}
                 height={1024}
-                className="w-auto h-auto max-w-full py-4"
+                className="w-full h-auto max-w-full py-4"
               />
               <NextImage
                 src={post[0]?.sixthImage?.asset?.url}
@@ -158,7 +158,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 height={1024}
                 className={`${
                   post[0]?.sixthImage?.asset?.url
-                    ? "w-auto h-auto max-w-full py-4"
+                    ? "w-full h-auto max-w-full py-4"
                     : "hidden"
                 }`}
               />
@@ -169,7 +169,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 height={1024}
                 className={`${
                   post[0]?.seventhImage?.asset?.url
-                    ? "w-auto h-auto max-w-full py-4"
+                    ? "w-full h-auto max-w-full py-4"
                     : "hidden"
                 }`}
               />
@@ -180,7 +180,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 height={1024}
                 className={`${
                   post[0]?.eighthImage?.asset?.url
-                    ? "w-auto h-auto max-w-full py-4"
+                    ? "w-full h-auto max-w-full py-4"
                     : "hidden"
                 }`}
               />
@@ -196,7 +196,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                         alt="figma"
                         width={32}
                         height={32}
-                        className="w-auto h-auto max-w-full object-cover"
+                        className="w-full h-auto max-w-full object-cover"
                       />
                       <span className="text-xl font-bold text-white">
                         Figma Design

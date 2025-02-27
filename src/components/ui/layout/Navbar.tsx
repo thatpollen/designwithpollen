@@ -1,8 +1,9 @@
 "use client";
 
-import Container from "@/components/ui/layout/Container";
+import MidContainer from "@/components/ui/layout/MidContainer";
 import NextLink from "next/link";
-import { Eet, WhatsApp } from "@/components/icons/Icons";
+import NextImage from "next/image";
+import { WhatsApp } from "@/components/icons/Icons";
 import Lottie from "lottie-react";
 import { Link } from "react-scroll";
 import { useEffect } from "react";
@@ -25,7 +26,7 @@ export default function Navbar() {
         navLeft.style.opacity = "0";
       } else {
         // navMiddle.style.width = "248px";
-        navMiddle.style.width = "160px";
+        navMiddle.style.width = "162px";
         whatsapp.style.transform = "translateX(8px)";
         navLeft.style.transform = "translateX(0px)";
         navLeft.style.opacity = "1";
@@ -43,11 +44,21 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 left-0 right-0 z-[100] bg-dark">
       <div className="py-5 border-b border-[rgba(255,255,255,0.08)]">
-        <Container>
+        <MidContainer>
           <div className="hidden justify-between items-center md:flex">
             <div className="w-[33.33%] transition-all duration-[450ms]">
               <div>
-                <Eet />
+                {/* <Eet /> */}
+                <figure className="w-8 h-8 overflow-hidden rounded-xl">
+                  <NextImage
+                    src="/Avatar.png"
+                    alt="nav-image"
+                    width={32}
+                    height={32}
+                    className="w-full h-full max-w-full"
+                    priority
+                  />
+                </figure>
               </div>
             </div>
 
@@ -76,7 +87,7 @@ export default function Navbar() {
                 Work
               </Link>
 
-              <Link
+              {/* <Link
                 // activeClass="nav_active"
                 to="services"
                 spy={true}
@@ -86,7 +97,7 @@ export default function Navbar() {
                 className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden"
               >
                 Servies
-              </Link>
+              </Link> */}
 
               <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
                 <a
@@ -114,12 +125,22 @@ export default function Navbar() {
                 rendererSettings={{
                 preserveAspectRatio: "xMidYMid slice",
                 }}/> */}
-                <Eet />
+                {/* <Eet /> */}
+                <figure className="w-8 h-8 overflow-hidden rounded-xl">
+                  <NextImage
+                    src="/Avatar.png"
+                    alt="nav-image"
+                    width={32}
+                    height={32}
+                    className="w-full h-full max-w-full"
+                    priority
+                  />
+                </figure>
               </div>
             </div>
 
-{/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
-            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[160px] max-w-max">
+            {/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
+            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[162px] max-w-max">
               <Link
                 // activeClass="nav_active"
                 to="about"
@@ -144,7 +165,7 @@ export default function Navbar() {
                 Work
               </Link>
 
-{/*               <Link
+              {/*               <Link
                 // activeClass="nav_active"
                 to="services"
                 spy={true}
@@ -171,7 +192,7 @@ export default function Navbar() {
 
             <div className="nav_right w-[33.33%]"></div>
           </div>
-        </Container>
+        </MidContainer>
       </div>
     </nav>
   );

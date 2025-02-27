@@ -1,4 +1,4 @@
-import SmallContainer from "@/components/ui/layout/SmallContainer";
+import MidContainer from "@/components/ui/layout/MidContainer";
 import Link from "next/link";
 import { Linkedin, Twitter } from "lucide-react";
 
@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <section>
-      <SmallContainer>
+      <MidContainer>
         <div className="flex flex-col justify-center items-center py-32 gap-8 sm:gap-12">
           <div className="flex gap-4">
             <Link href="https://x.com/thatpollen" legacyBehavior>
@@ -25,7 +25,7 @@ export default function Footer() {
             All works by Pollen @{currentYear}
           </p>
         </div>
-      </SmallContainer>
+      </MidContainer>
     </section>
   );
 }
