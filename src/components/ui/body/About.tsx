@@ -62,23 +62,12 @@ export default function About() {
                     intuitive, impactful experiences that redefine how we
                     interact with technology.
                   </p>
-                  <Link href="/" legacyBehavior>
+                  <Link href="https://www.linkedin.com/in/thatpollen" legacyBehavior>
                     <a
                       className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
                       target="_blank"
                     >
                       Linkedin
-                      <span>
-                        <ArrowUpRight size={16} />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="/" legacyBehavior>
-                    <a
-                      className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
-                      target="_blank"
-                    >
-                      Twitter
                       <span>
                         <ArrowUpRight size={16} />
                       </span>
