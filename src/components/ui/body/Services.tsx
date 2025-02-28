@@ -3,8 +3,7 @@ import MidContainer from "@/components/ui/layout/MidContainer";
 export default function Services() {
   return (
     <section id="services">
-      <div className="py-[232px] border border-[rgba(255,255,255,0.08)] relative overflow-hidden md:py-32 xs:py-20">
-        <div className="gradient_line w-[24%] h-px absolute left-0 right-0 bottom-0 bg-gradient-to-r from-[rgba(255,203,67,0)] via-[rgba(188,237,4,0.5)] to-[#bced04]"></div>
+      <div className="py-[232px] relative overflow-hidden md:py-32 xs:py-20">
         <MidContainer>
           <div className="flex flex-col rounded-2xl">
             <div className="flex flex-col gap-6 px-10 pb-16 xs:px-0">

@@ -41,17 +41,10 @@ export const aeonik = localFont({
   display: "swap",
 });
 
-export const zigzag = localFont({
-  src: [
-    {
-      path: "/fonts/ZIGZAG-NotRounded.woff2",
-      style: "normal",
-    },
+export const zigzagNotRounded = localFont({
+  src: [{ path: "/fonts/ZIGZAG-NotRounded.woff2", style: "normal" }],
+});
 
-    {
-      path: "/fonts/ZIGZAG-NotRounded.woff2",
-      style: "normal",
-    },
-  ],
-  display: "swap",
+export const zigzagRounded = localFont({
+  src: [{ path: "/fonts/ZIGZAG-Rounded.woff2", style: "normal" }],
 });

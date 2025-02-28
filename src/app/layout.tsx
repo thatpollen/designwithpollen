@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { aeonik, zigzag } from "@/lib/utils/fonts";
+import { aeonik } from "@/lib/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Freelance Designer (UX/UI) & Development | Designwithpollen.com",

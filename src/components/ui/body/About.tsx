@@ -4,6 +4,9 @@ import MidContainer from "@/components/ui/layout/MidContainer";
 import { useEffect, useRef } from "react";
 import SplitType from "split-type";
 import { gsap, ScrollTrigger } from "gsap/all";
+import { zigzagRounded, zigzagNotRounded } from "@/lib/utils/fonts";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
   const elementsToSplitRef = useRef<HTMLParagraphElement>(null);
@@ -35,27 +38,61 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="relative overflow-hidden border border-[rgba(255,255,255,0.08)]">
-        <div className="gradient_line w-[24%] h-px absolute left-0 right-0 bottom-0 bg-gradient-to-r from-[rgba(255,203,67,0)] via-[rgba(188,237,4,0.5)] to-[#bced04]"></div>
+      <div className="relative overflow-hidden">
         <MidContainer>
-          <div className="grid grid-cols-3 gap-4 py-[232px] md:py-32 sm:grid-cols-1 sm:gap-10 xs:py-20">
-            <div className="col-span-1 sm:col-auto">
-              <span className="text-sm opacity-40 uppercase">About</span>
-            </div>
-            <div className="col-start-2 col-end-4 sm:col-auto">
-              <p
-                className="text-[30px] leading-[36px] font-normal md:text-h6"
-                ref={elementsToSplitRef}
-              >
-                I&apos;m a UI/UX enthusiast with over 10 years of experience,
-                specializing in web development. I craft sleek, engaging
-                websites with a focus on user experience. Every site I build is
-                not just visually appealing but also interactive and
-                user-friendly, thanks to my skillful animation and coding. Even
-                off the clock, I&apos;m exploring new trends, always ready for
-                the next digital challenge. Let&apos;s create something
-                unforgettable together!
-              </p>
+          <div className="py-24 md:py-0 ">
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 sm:gap-10 px-6 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
+              <div className="col-span-1 sm:col-auto">
+                <span
+                  className={`${zigzagRounded.className} text-lg text-limeGreen uppercase`}
+                >
+                  About
+                </span>
+              </div>
+              <div className="col-start-2 col-end-4 sm:col-auto">
+                <div className="flex flex-col items-start gap-6">
+                  <p
+                    className="text-h6 leading-[26.4px] font-normal md:text-h6"
+                    ref={elementsToSplitRef}
+                  >
+                    With 
+                    <span
+                      className={`${zigzagNotRounded.className} text-limeGreen`}
+                    >
+                      10 years of experience
+                    </span>
+                     at the intersection of innovation and design, I’ve
+                    dedicated my career to shaping the digital
+                    frontier—especially in Web3, startups, and fintech. As
+                    a Product Designer, Design Strategist, and Systems Thinker,
+                    I thrive on transforming bold ideas into intuitive,
+                    impactful experiences that redefine how we interact with
+                    technology.
+                  </p>
+                  <Link href="/" legacyBehavior>
+                    <a
+                      className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
+                      target="_blank"
+                    >
+                      Linkedin
+                      <span>
+                        <ArrowUpRight size={16} />
+                      </span>
+                    </a>
+                  </Link>
+                  <Link href="/" legacyBehavior>
+                    <a
+                      className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
+                      target="_blank"
+                    >
+                      Twitter
+                      <span>
+                        <ArrowUpRight size={16} />
+                      </span>
+                    </a>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </MidContainer>
