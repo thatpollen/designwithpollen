@@ -51,7 +51,7 @@ export default function About() {
               <div className="col-span-2 col-end-4 sm:col-auto">
                 <div className="flex flex-col items-start gap-6">
                   <p
-                    className="text-h6 leading-[26.4px] font-normal md:text-h6"
+                    className="text-h6 leading-7 font-medium"
                     ref={elementsToSplitRef}
                   >
                     With 10 years of experience  at the intersection of
@@ -62,7 +62,10 @@ export default function About() {
                     intuitive, impactful experiences that redefine how we
                     interact with technology.
                   </p>
-                  <Link href="https://www.linkedin.com/in/thatpollen" legacyBehavior>
+                  <Link
+                    href="https://www.linkedin.com/in/thatpollen"
+                    legacyBehavior
+                  >
                     <a
                       className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
                       target="_blank"
