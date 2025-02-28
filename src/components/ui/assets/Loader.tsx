@@ -29,7 +29,7 @@ export default function Loader() {
     >
       <h6 className="text-h6 font-medium uppercase">Pollen Chakma</h6>
       <span className="text-sm font-light opacity-[56%]">
-        I do Design(UX/UI) & Develop
+        I do Design & Develop
       </span>
     </div>
   );
