@@ -28,9 +28,9 @@ export default function Modal({ children }: { children: React.ReactNode }) {
         // role="dialog"
         data-lenis-prevent
       >
-        <div className="s-modal flex justify-center items gap-4 fixed inset-0 z-[1001]">
+        <div className="s-modal flex justify-center items-center gap-4 fixed inset-0 z-[1001]">
           {/* <Container> */}
-          <div className="flex justify-center items-center px-12 sm:px-6 py-12 sm:py-6 w-full h-full">
+          <div className="flex justify-end xl:justify-center items-center px-12 py-6 w-full h-full">
             <TransitionChild as={Fragment} {...transitionClasses}>
               <DialogPanel
                 data-lenis-prevent
