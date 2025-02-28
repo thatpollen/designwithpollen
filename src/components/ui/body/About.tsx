@@ -4,7 +4,6 @@ import MidContainer from "@/components/ui/layout/MidContainer";
 import { useEffect, useRef } from "react";
 import SplitType from "split-type";
 import { gsap, ScrollTrigger } from "gsap/all";
-import { zigzagRounded, zigzagNotRounded } from "@/lib/utils/fonts";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -41,33 +40,27 @@ export default function About() {
       <div className="relative overflow-hidden">
         <MidContainer>
           <div className="py-24 md:py-0 ">
-            <div className="grid grid-cols-3 gap-4 sm:grid-cols-1 sm:gap-10 px-6 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-10 px-6 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
               <div className="col-span-1 sm:col-auto">
                 <span
-                  className={`${zigzagRounded.className} text-lg text-limeGreen uppercase`}
+                  className={`font-cevicheOne text-[30px] leading-8 text-limeGreen uppercase`}
                 >
                   About
                 </span>
               </div>
-              <div className="col-start-2 col-end-4 sm:col-auto">
+              <div className="col-span-2 col-end-4 sm:col-auto">
                 <div className="flex flex-col items-start gap-6">
                   <p
                     className="text-h6 leading-[26.4px] font-normal md:text-h6"
                     ref={elementsToSplitRef}
                   >
-                    With 
-                    <span
-                      className={`${zigzagNotRounded.className} text-limeGreen`}
-                    >
-                      10 years of experience
-                    </span>
-                     at the intersection of innovation and design, I’ve
-                    dedicated my career to shaping the digital
-                    frontier—especially in Web3, startups, and fintech. As
-                    a Product Designer, Design Strategist, and Systems Thinker,
-                    I thrive on transforming bold ideas into intuitive,
-                    impactful experiences that redefine how we interact with
-                    technology.
+                    With 10 years of experience  at the intersection of
+                    innovation and design, I’ve dedicated my career to shaping
+                    the digital frontier—especially in Web3, startups, and
+                    fintech. As a Product Designer, Design Strategist, and
+                    Systems Thinker, I thrive on transforming bold ideas into
+                    intuitive, impactful experiences that redefine how we
+                    interact with technology.
                   </p>
                   <Link href="/" legacyBehavior>
                     <a

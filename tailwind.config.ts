@@ -1,3 +1,4 @@
+import { cevicheOne } from "@/lib/utils/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -7,6 +8,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        cevicheOne: ["var(--font-ceviche-one)"],
+      },
+    },
+
     screens: {
       "2xl": { max: "1920px" },
       // => @media (max-width: 1920px) { ... }

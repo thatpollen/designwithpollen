@@ -1,5 +1,4 @@
 import MidContainer from "@/components/ui/layout/MidContainer";
-import { zigzagRounded } from "@/lib/utils/fonts";
 
 export default function Hero() {
   return (
@@ -8,12 +7,12 @@ export default function Hero() {
         <MidContainer>
           <div className="max-w-[732px] mx-auto md:max-w-full flex flex-col items-stretch justify-start gap-4">
             <span
-              className={`${zigzagRounded.className} text-lg text-limeGreen uppercase text-center`}
+              className={`font-cevicheOne text-[30px] leading-8 text-limeGreen uppercase text-center`}
             >
               10 years in tech
             </span>
             <h1 className="text-[60px] leading-[66px] text-center font-medium text-white sm:text-h4 sm:leading-[52px] xs:text-[36px] xs:leading-[40px]">
-              Freelance product designer (UX/UI) and developer
+              Product designer and developer
             </h1>
           </div>
         </MidContainer>
