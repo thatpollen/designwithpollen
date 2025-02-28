@@ -3,135 +3,22 @@
 import MidContainer from "@/components/ui/layout/MidContainer";
 import NextLink from "next/link";
 import NextImage from "next/image";
-import { WhatsApp } from "@/components/icons/Icons";
-import Lottie from "lottie-react";
 import { Link } from "react-scroll";
-import { useEffect } from "react";
 
 export default function Navbar() {
-  useEffect(() => {
-    let lastScrollTop = 0;
-
-    const navMiddle = document.querySelector(".nav_middle") as HTMLElement;
-    const whatsapp = document.querySelector(".whatsapp") as HTMLElement;
-    const navLeft = document.querySelector(".nav_left") as HTMLElement;
-    // const navRight = document.querySelector('.nav_right') as HTMLElement;
-
-    const handleScroll = () => {
-      let scrollTop = window.scrollY || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        navMiddle.style.width = "438px";
-        whatsapp.style.transform = "translateX(0)";
-        navLeft.style.transform = "translateX(-20px)";
-        navLeft.style.opacity = "0";
-      } else {
-        // navMiddle.style.width = "248px";
-        navMiddle.style.width = "162px";
-        whatsapp.style.transform = "translateX(8px)";
-        navLeft.style.transform = "translateX(0px)";
-        navLeft.style.opacity = "1";
-      }
-      // lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <nav className="sticky top-0 left-0 right-0 z-[100] bg-dark">
-      <div className="py-5 border-b border-[rgba(255,255,255,0.08)]">
+      <div className="py-4 border-b border-[rgba(255,255,255,0.08)]">
         <MidContainer>
-          <div className="hidden justify-between items-center md:flex">
-            <div className="w-[33.33%] transition-all duration-[450ms]">
+          <div className="flex justify-between items-center">
+            <div className="nav_left">
               <div>
-                {/* <Eet /> */}
-                <figure className="w-8 h-8 overflow-hidden rounded-xl">
+                <figure className="w-10 h-10 overflow-hidden rounded-xl">
                   <NextImage
                     src="/Avatar.png"
                     alt="nav-image"
-                    width={32}
-                    height={32}
-                    className="w-full h-full max-w-full"
-                    priority
-                  />
-                </figure>
-              </div>
-            </div>
-
-            <div className="flex justify-start items-center gap-2 px-1.5 py-1 bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px]">
-              <Link
-                // activeClass="nav_active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration  hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden"
-              >
-                About
-              </Link>
-
-              <Link
-                // activeClass="nav_active"
-                to="works"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden"
-              >
-                Work
-              </Link>
-
-              {/* <Link
-                // activeClass="nav_active"
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)] sm:hidden"
-              >
-                Servies
-              </Link> */}
-
-              <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
-                <a
-                  className="px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen grow-0 shrink-0"
-                  target="_blank"
-                >
-                  <span>
-                    <WhatsApp />
-                  </span>
-                  <span className="xs:hidden">WhatsApp</span>
-                </a>
-              </NextLink>
-            </div>
-
-            <div className="w-[33.33%]"></div>
-          </div>
-
-          <div className="flex justify-between items-center md:hidden">
-            <div className="nav_left w-[33.33%] transition-all duration-[450ms]">
-              <div>
-                {/* <Lottie  
-                loop={true}
-                autoplay={true}
-                animationData={}
-                rendererSettings={{
-                preserveAspectRatio: "xMidYMid slice",
-                }}/> */}
-                {/* <Eet /> */}
-                <figure className="w-8 h-8 overflow-hidden rounded-xl">
-                  <NextImage
-                    src="/Avatar.png"
-                    alt="nav-image"
-                    width={32}
-                    height={32}
+                    width={40}
+                    height={40}
                     className="w-full h-full max-w-full"
                     priority
                   />
@@ -140,7 +27,7 @@ export default function Navbar() {
             </div>
 
             {/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
-            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[162px] max-w-max">
+            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] max-w-max">
               <Link
                 // activeClass="nav_active"
                 to="about"
@@ -148,7 +35,7 @@ export default function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration  hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
                 About
               </Link>
@@ -177,20 +64,15 @@ export default function Navbar() {
                 Servies
               </Link> */}
 
-              <NextLink href="https://wa.me/+8801770759934" legacyBehavior>
+              <NextLink href="mailto:talkspollen@gmail.com" legacyBehavior>
                 <a
-                  className="whatsapp px-3.5 py-2 text-sm rounded-[40px] flex justify-start items-center gap-2 font-medium text-charcoal bg-limeGreen grow-0 shrink-0 translate-x-[8px] transition-all duration-500"
+                  className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
                   target="_blank"
                 >
-                  <span>
-                    <WhatsApp />
-                  </span>
-                  WhatsApp
+                  Contact
                 </a>
               </NextLink>
             </div>
-
-            <div className="nav_right w-[33.33%]"></div>
           </div>
         </MidContainer>
       </div>

@@ -40,7 +40,7 @@ export default function About() {
       <div className="relative overflow-hidden">
         <MidContainer>
           <div className="py-24 md:py-0 ">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-10 px-6 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-10 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
               <div className="col-span-1 sm:col-auto">
                 <span
                   className={`font-cevicheOne text-[30px] leading-8 text-limeGreen uppercase`}

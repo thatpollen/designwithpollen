@@ -5,13 +5,13 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { cevicheOne, inter } from "@/lib/utils/fonts";
 
 export const metadata: Metadata = {
-  title: "Freelance Designer (UX/UI) & Development | Designwithpollen.com",
+  title: "Product designer and developer",
   description:
     "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
   metadataBase: new URL("https://designwithpollen.com"),
   // metadataBase: new URL("https://designwithpollen.vercel.app"),
   openGraph: {
-    title: "Freelance Designer (UX/UI) & Development | Designwithpollen.com",
+    title: "Product designer and developer",
     description:
       "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
     url: "https://designwithpollen.com",

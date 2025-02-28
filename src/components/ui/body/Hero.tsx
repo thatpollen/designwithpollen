@@ -11,8 +11,9 @@ export default function Hero() {
             >
               10 years in tech
             </span>
-            <h1 className="text-[60px] leading-[66px] text-center font-medium text-white sm:text-h4 sm:leading-[52px] xs:text-[36px] xs:leading-[40px]">
-              Product designer and developer
+            <h1 className="text-[60px] leading-[54px] text-center font-medium text-white sm:text-h4 sm:leading-[52px] xs:text-[36px] xs:leading-[40px]">
+              Product designer <br />
+              and developer
             </h1>
           </div>
         </MidContainer>
