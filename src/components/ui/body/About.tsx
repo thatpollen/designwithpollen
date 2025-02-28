@@ -35,8 +35,8 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="relative overflow-hidden">
-        {/* <div className="gradient_line w-[24%] h-px absolute left-0 right-0 bottom-0 bg-gradient-to-r from-[rgba(255,203,67,0)] via-[rgba(188,237,4,0.5)] to-[#bced04]"></div> */}
+      <div className="relative overflow-hidden border border-[rgba(255,255,255,0.08)]">
+        <div className="gradient_line w-[24%] h-px absolute left-0 right-0 bottom-0 bg-gradient-to-r from-[rgba(255,203,67,0)] via-[rgba(188,237,4,0.5)] to-[#bced04]"></div>
         <MidContainer>
           <div className="grid grid-cols-3 gap-4 py-[232px] md:py-32 sm:grid-cols-1 sm:gap-10 xs:py-20">
             <div className="col-span-1 sm:col-auto">
