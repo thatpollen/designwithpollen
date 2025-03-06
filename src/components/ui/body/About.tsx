@@ -42,25 +42,25 @@ export default function About() {
           <div className="py-24 md:py-0 ">
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-10 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
               <div className="col-span-1 sm:col-auto">
-                <span
-                  className={`font-cevicheOne text-[30px] leading-8 text-limeGreen uppercase`}
-                >
+                <span className={`font-inter text-xl leading-8 text-lime-500`}>
                   About
                 </span>
               </div>
               <div className="col-span-2 col-end-4 sm:col-auto">
                 <div className="flex flex-col items-start gap-6">
+                  <h2 className="text-lg">About me</h2>
                   <p
-                    className="text-h6 leading-7 font-medium"
+                    className="text-2xl text-zinc-50 leading-7 font-medium"
                     ref={elementsToSplitRef}
                   >
-                    With 10 years of experience  at the intersection of
-                    innovation and design, I’ve dedicated my career to shaping
-                    the digital frontier—especially in Web3, startups, and
-                    fintech. As a Product Designer, Design Strategist, and
-                    Systems Thinker, I thrive on transforming bold ideas into
-                    intuitive, impactful experiences that redefine how we
-                    interact with technology.
+                    Hello there! I&apos;m Pollen Chakma, a product designer and
+                    front-end developer from Rangamati, near the India and
+                    Myanmar border. My journey started about 10 years ago as an
+                    email developer through freelance work. Three years later, I
+                    transitioned into UX/UI design. Recently, I&apso;ve expanded
+                    my skills to include JavaScript, React, Next.js, Tailwind,
+                    and Storybook, which allows me to work more closely on
+                    product design and development.
                   </p>
                   <Link
                     href="https://www.linkedin.com/in/thatpollen"

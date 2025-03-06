@@ -16,12 +16,14 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.42.1",
     "@studio-freight/react-lenis": "^0.0.47",
+    "@tailwindcss/postcss": "^4.0.9",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.469.0",
     "next": "14.2.3",
     "next-sanity": "^7.1.4",
+    "postcss": "^8.5.3",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll": "^1.9.0",
@@ -29,7 +31,8 @@
     "sharp": "^0.33.4",
     "split-type": "^0.3.4",
     "styled-components": "^6.1.9",
-    "tailwind-merge": "^3.0.2"
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.9"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -38,8 +41,6 @@
     "@types/react-scroll": "^1.8.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }

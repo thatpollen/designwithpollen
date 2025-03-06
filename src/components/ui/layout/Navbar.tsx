@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 left-0 right-0 z-[100] bg-dark">
-      <div className="py-4 border-b border-[rgba(255,255,255,0.08)]">
+      <div className="py-4 border-b border-zinc-900">
         <MidContainer>
           <div className="flex justify-between items-center">
             <div className="nav_left">
@@ -27,7 +27,7 @@ export default function Navbar() {
             </div>
 
             {/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
-            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] max-w-max">
+            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-zinc-800 rounded-[40px] backdrop-blur-[5px] max-w-max text-zinc-50">
               <Link
                 // activeClass="nav_active"
                 to="about"

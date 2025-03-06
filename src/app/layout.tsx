@@ -38,7 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-K33NPCH" />
-      <body className={`${inter.variable} ${cevicheOne.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${cevicheOne.variable} antialiased text-zinc-50`}
+      >
         <SmoothScroll>
           {children}
           {modal}
