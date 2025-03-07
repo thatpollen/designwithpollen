@@ -84,7 +84,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                   </span>
                 </div>
               </div> */}
-              <div className="flex flex-col gap-4 p-8 text-darkBlue">
+              <div className="flex flex-col gap-4 p-8 text-[#222831]">
                 <h2 className="text-h5 leading-[1.4] text-dark font-bold">
                   {post[0]?.title}
                 </h2>
@@ -102,7 +102,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 className="w-full h-auto max-w-full"
                 priority
               />
-              <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
+              <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Overview</h6>
                 <p className="text-charcoal">{post[0]?.projectIntro}</p>
               </div>
@@ -114,7 +114,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 className="w-full h-auto max-w-full py-4"
                 priority
               />
-              <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
+              <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Goal</h6>
                 <p className="text-charcoal">{post[0]?.projectGoal}</p>
               </div>
@@ -126,7 +126,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                 className="w-full h-auto max-w-full py-4"
                 priority
               />
-              <div className="flex flex-col gap-4 p-8 text-darkBlue bg-[#f0f1f5]">
+              <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
                 <h6 className="text-sm font-bold">/Solution</h6>
                 <p className="text-charcoal">{post[0]?.projectSolution}</p>
               </div>
@@ -184,7 +184,7 @@ export default async function ProjectSlugPage({ params }: ProjectProps) {
                     : "hidden"
                 }`}
               />
-              {/* <div className="flex flex-col gap-4 p-8 text-darkBlue">
+              {/* <div className="flex flex-col gap-4 p-8 text-[#222831]">
                 <NextLink href={`${post[0]?.figmaProjectLink}`} legacyBehavior>
                   <a
                     className="flex justify-between items-center p-6 bg-dark rounded-xl"

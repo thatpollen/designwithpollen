@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 left-0 right-0 z-[100] bg-dark">
+    <nav className="sticky top-0 left-0 right-0 z-[100] bg-neutral-950 backdrop-blur-[5px]">
       <div className="py-4 border-b border-zinc-900">
         <MidContainer>
           <div className="flex justify-between items-center">
@@ -35,7 +35,7 @@ export default function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                className="cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
                 About
               </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
                 smooth={true}
                 offset={0}
                 duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                className="cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
                 Work
               </Link>
@@ -66,11 +66,17 @@ export default function Navbar() {
 
               <NextLink href="mailto:talkspollen@gmail.com" legacyBehavior>
                 <a
-                  className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                  className="cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
                   target="_blank"
                 >
                   Contact
                 </a>
+              </NextLink>
+              <NextLink
+                href="/"
+                className="cursor-pointer px-4 py-2 text-xs font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+              >
+                Download CV
               </NextLink>
             </div>
           </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { cevicheOne, inter } from "@/lib/utils/fonts";
+import { inter } from "@/lib/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Product designer and developer",
@@ -38,9 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-K33NPCH" />
-      <body
-        className={`${inter.variable} ${cevicheOne.variable} antialiased text-zinc-50`}
-      >
+      <body className={`${inter.variable} antialiased text-zinc-50`}>
         <SmoothScroll>
           {children}
           {modal}

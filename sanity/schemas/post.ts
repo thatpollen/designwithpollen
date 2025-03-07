@@ -16,6 +16,12 @@ export const post = {
       validation: (rule: any) => rule.required(),
     },
     {
+      name: "subtitle",
+      title: "Subtitle",
+      type: "string",
+      validation: (rule: any) => rule.required(),
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",

@@ -1,87 +1,89 @@
 "use client";
 
-import MidContainer from "@/components/ui/layout/MidContainer";
-import { useEffect, useRef } from "react";
-import SplitType from "split-type";
-import { gsap, ScrollTrigger } from "gsap/all";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import NextImage from "next/image";
+import AboutDialog from "../aboutDialog/AboutDialog";
 
 export default function About() {
-  const elementsToSplitRef = useRef<HTMLParagraphElement>(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    if (elementsToSplitRef.current) {
-      const splitTypes = elementsToSplitRef.current;
-
-      const text = new SplitType(splitTypes, { types: "words" });
-
-      gsap.from(text.words, {
-        scrollTrigger: {
-          trigger: splitTypes,
-          start: "top 80%",
-          end: "bottom 50%",
-          scrub: 2,
-          markers: false,
-        },
-        opacity: 0.24,
-        stagger: 0.1,
-        duration: 0.4,
-      });
-    }
-
-    return;
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section id="about">
-      <div className="relative overflow-hidden">
-        <MidContainer>
-          <div className="py-24 md:py-0 ">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 sm:gap-10 bg-[rgba(23,23,23,1)] p-12 rounded-2xl">
-              <div className="col-span-1 sm:col-auto">
-                <span className={`font-inter text-xl leading-8 text-lime-500`}>
-                  About
-                </span>
-              </div>
-              <div className="col-span-2 col-end-4 sm:col-auto">
-                <div className="flex flex-col items-start gap-6">
-                  <h2 className="text-lg">About me</h2>
-                  <p
-                    className="text-2xl text-zinc-50 leading-7 font-medium"
-                    ref={elementsToSplitRef}
-                  >
-                    Hello there! I&apos;m Pollen Chakma, a product designer and
-                    front-end developer from Rangamati, near the India and
-                    Myanmar border. My journey started about 10 years ago as an
-                    email developer through freelance work. Three years later, I
-                    transitioned into UX/UI design. Recently, I&apso;ve expanded
-                    my skills to include JavaScript, React, Next.js, Tailwind,
-                    and Storybook, which allows me to work more closely on
-                    product design and development.
-                  </p>
-                  <Link
-                    href="https://www.linkedin.com/in/thatpollen"
-                    legacyBehavior
-                  >
-                    <a
-                      className="flex items-center gap-1 px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs hover:bg-[rgba(38,38,38,1)]"
-                      target="_blank"
-                    >
-                      Linkedin
-                      <span>
-                        <ArrowUpRight size={16} />
-                      </span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
+      <div className="relative overflow-hidden py-16">
+        <div className="max-w-[966px] mx-auto px-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12 bg-[rgba(23,23,23,1)] py-8 px-6 sm:px-8 sm:py-12 md:px-6 rounded-2xl">
+            <div className="grid grid-cols-2 gap-2 w-1/3">
+              <figure className="aspect-square overflow-hidden rounded-br rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
+                <NextImage
+                  src="/profile/profile-4.jpg"
+                  alt="profile-image"
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </figure>
+              <figure className="aspect-square overflow-hidden rounded-bl rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
+                <NextImage
+                  src="/profile/profile-3.jpg"
+                  alt="profile-image"
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </figure>
+              <figure className="aspect-square overflow-hidden rounded-tr rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
+                <NextImage
+                  src="/profile/profile-1.jpg"
+                  alt="profile-image"
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </figure>
+              <figure className="aspect-square overflow-hidden rounded-tl rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
+                <NextImage
+                  src="/profile/profile-2.jpg"
+                  alt="profile-image"
+                  width={100}
+                  height={100}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </figure>
+            </div>
+
+            <div className="flex flex-col items-start gap-4 w-2/3">
+              <h2 className="text-2xl font-semibold font-playwrite">
+                About me
+              </h2>
+              <p className="text-sm text-neutral-400">
+                Hello there! I&apos;m Pollen Chakma, a product designer and
+                front-end developer from Rangamati, near the India and Myanmar
+                border. My journey started about 10 years ago as an email
+                developer through freelance work. Three years later, I
+                transitioned into UX/UI design. Recently, I&apso;ve expanded my
+                skills to include JavaScript, React, Next.js, Tailwind, and
+                Storybook, which allows me to work more closely on product
+                design and development.
+              </p>
+
+              <button
+                className="text-sm font-medium text-brand cursor-pointer"
+                onClick={() => setIsOpen(true)}
+              >
+                Read more...
+              </button>
             </div>
           </div>
-        </MidContainer>
+        </div>
       </div>
+
+      {/* About */}
+      <AboutDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );
 }

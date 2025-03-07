@@ -10,7 +10,7 @@ export default function Works({ children }: { children: React.ReactNode }) {
           <div className="max-w-[580px] mx-auto flex flex-col gap-4 pb-16">
             {/* title */}
             <h5 className="text-2xl text-center font-semibold">
-              Highlighted Projects
+              Web3 highlighted projects
             </h5>
             {/* subtext */}
             <p className="text-center text-zinc-400">
