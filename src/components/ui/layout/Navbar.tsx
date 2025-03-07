@@ -26,47 +26,10 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/*             <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-[rgba(255,255,255,0.12)] rounded-[40px] backdrop-blur-[5px] w-[248px] max-w-max"> */}
-            <div className="nav_middle flex justify-start items-center gap-2 px-1.5 py-1 overflow-hidden bg-dark border border-zinc-800 rounded-[40px] backdrop-blur-[5px] max-w-max text-zinc-50">
-              <Link
-                // activeClass="nav_active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                className="hidden sm:block cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
-              >
-                About
-              </Link>
-
-              <Link
-                // activeClass="nav_active"
-                to="works"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                className="hidden sm:block cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
-              >
-                Work
-              </Link>
-
-              {/*               <Link
-                // activeClass="nav_active"
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1000}
-                className="cursor-pointer px-4 py-2 text-sm border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
-              >
-                Servies
-              </Link> */}
-
+            <div className="nav_middle flex justify-start items-center gap-0 px-1.5 py-1 overflow-hidden bg-dark border border-zinc-800 rounded-2xl backdrop-blur-[5px] max-w-max text-zinc-50">
               <NextLink href="mailto:talkspollen@gmail.com" legacyBehavior>
                 <a
-                  className="cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                  className="cursor-pointer px-4 py-2 text-xs font-semibold border border-[rgba(188,237,4,0)] rounded-xl transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
                   target="_blank"
                 >
                   Contact
@@ -74,7 +37,7 @@ export default function Navbar() {
               </NextLink>
               <NextLink
                 href="/"
-                className="cursor-pointer px-4 py-2 text-xs font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
+                className="cursor-pointer px-4 py-2 text-xs font-semibold border border-[rgba(188,237,4,0)] rounded-xl transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
                 Download CV
               </NextLink>

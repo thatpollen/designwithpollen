@@ -8,14 +8,14 @@ export default function Footer() {
   return (
     <section>
       <MidContainer>
-        <div className="flex flex-col pt-24 pb-6 gap-32 border-t border-[rgba(255,255,255,0.12)]">
+        <div className="flex flex-col pt-16 sm:pt-24 pb-6 gap-32 border-t border-neutral-900">
           <div className="w-full flex flex-col justify-between items-stretch gap-12 sm:flex-row sm:gap-0 sm:items-center">
             <div className="flex flex-col gap-12">
               <h2 className="font-semibold text-4xl sm:text-5xl leading-[52.8px] text-white">
                 Let&apos;s work together
               </h2>
               <Link href="mailto:talkspollen@gmail.com">
-                <button className="bg-brand px-3 py-2 flex items-center gap-1 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-semibold leading-[18px] text-neutral-900 cursor-pointer">
+                <button className="bg-brand px-3 py-2 flex items-center gap-1 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-semibold leading-[18px] text-neutral-900 cursor-pointer hover:bg-lime-500">
                   Contact me
                   <ArrowUpRight size={16} />
                 </button>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <Link href="https://x.com/home" legacyBehavior>
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 text-xs leading-[18px] text-white"
+                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                   >
                     Twitter
                     <ArrowUpRight size={16} />
@@ -40,7 +40,7 @@ export default function Footer() {
                 >
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 text-xs leading-[18px] text-white"
+                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                   >
                     Linkedin
                     <ArrowUpRight size={16} />
@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link href="https://dribbble.com/thatpollen" legacyBehavior>
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 text-xs leading-[18px] text-white"
+                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                   >
                     Dribbble
                     <ArrowUpRight size={16} />
@@ -62,7 +62,7 @@ export default function Footer() {
                 <Link href="https://github.com/thatpollen" legacyBehavior>
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 text-xs leading-[18px] text-white"
+                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                   >
                     Github
                     <ArrowUpRight size={16} />
@@ -76,7 +76,7 @@ export default function Footer() {
                 >
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 text-xs leading-[18px] text-white"
+                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                   >
                     Upwork
                     <ArrowUpRight size={16} />

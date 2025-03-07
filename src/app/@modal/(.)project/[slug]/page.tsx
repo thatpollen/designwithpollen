@@ -71,27 +71,22 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
 
   return (
     <Modal>
-      <div>
-        <div className="flex flex-col gap-4 p-8 text-[#222831]">
-          <h2 className="text-h5 leading-[1.4] text-dark font-bold">
+      <div className="p-4 sm:p-12 flex flex-col gap-6 bg-zinc-50">
+        <div className="flex flex-col gap-4 text-zinc-950">
+          <h2 className="text-3xl leading-[1.4] text-dark font-bold">
             {post?.title}
           </h2>
-          <div className="flex justify-between items-center gap-4 py-8">
-            <span>PROJECT YEAR</span>
-            <div className="w-1/2 h-px max-w-full bg-[rgba(0,0,0,0.16)]"></div>
-            <span>{post?.projectYear}</span>
-          </div>
         </div>
         <NextImage
           src={post?.introImage?.asset?.url}
           alt={post?.introImage?.alt}
           width={1920}
           height={1024}
-          className="w-full h-auto max-w-full"
+          className="w-full h-auto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
-          <h6 className="text-sm font-bold">/Overview</h6>
+        <div className="flex flex-col gap-2 text-zinc-500 font-normal">
+          <h4 className="text-xl font-semibold text-zinc-950">Overview</h4>
           <p className="text-charcoal">{post?.projectIntro}</p>
         </div>
         <NextImage
@@ -99,11 +94,11 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.firstImage?.alt}
           width={1920}
           height={1024}
-          className="w-fullauto max-w-full py-4"
+          className="w-fullauto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
-          <h6 className="text-sm font-bold">/Goal</h6>
+        <div className="flex flex-col gap-2 text-zinc-500">
+          <h4 className="text-xl font-semibold text-zinc-950">Goal</h4>
           <p className="text-charcoal">{post?.projectGoal}</p>
         </div>
         <NextImage
@@ -111,10 +106,10 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.secondImage?.alt}
           width={2201}
           height={2341}
-          className="w-full h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-4 p-8 text-[#222831] bg-[#f0f1f5]">
+        <div className="flex flex-col gap-4 p-8 text-[#222831]">
           <h6 className="text-sm font-bold">/Solution</h6>
           <p className="text-charcoal">{post?.projectSolution}</p>
         </div>
@@ -123,21 +118,21 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           alt={post?.thirdImage?.alt}
           width={1920}
           height={1024}
-          className="w-full h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full rounded-2xl shadow-sm"
         />
         <NextImage
           src={post?.fourthImage?.asset?.url}
           alt={post?.fourthImage?.alt}
           width={1920}
           height={1024}
-          className="w-full h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full rounded-2xl shadow-sm"
         />
         <NextImage
           src={post?.fifthImage?.asset?.url}
           alt={post?.fifthImage?.alt}
           width={1920}
           height={1024}
-          className="w-full h-auto max-w-full py-4"
+          className="w-full h-auto max-w-full rounded-2xl shadow-sm"
         />
         {post?.sixthImage?.asset?.url && (
           <NextImage
@@ -145,7 +140,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.sixthImage?.alt}
             width={1920}
             height={1024}
-            className="w-full h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full rounded-2xl shadow-sm"
           />
         )}
         {post?.seventhImage?.asset?.url && (
@@ -154,7 +149,7 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.seventhImage?.alt}
             width={1920}
             height={1024}
-            className="w-full h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full rounded-2xl shadow-sm"
           />
         )}
         {post?.eighthImage?.asset?.url && (
@@ -163,33 +158,9 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
             alt={post?.eighthImage?.alt}
             width={1920}
             height={1024}
-            className="w-full h-auto max-w-full py-4"
+            className="w-full h-auto max-w-full rounded-2xl shadow-sm"
           />
         )}
-        {/* <div className="flex flex-col gap-4 p-8 text-[#222831]">
-          <NextLink href={`${post?.figmaProjectLink}`} legacyBehavior>
-            <a
-              className="flex justify-between items-center p-6 bg-dark rounded-xl"
-              target="_blank"
-            >
-              <div className="shrink flex justify-start items-center gap-2">
-                <NextImage
-                  src="/figma.svg"
-                  alt="figma"
-                  width={32}
-                  height={32}
-                  className="w-full h-auto max-w-full object-cover"
-                />
-                <span className="text-xl font-bold text-white">
-                  Figma Design
-                </span>
-              </div>
-              <span className="w-6 h-6">
-                <LinkArrow />
-              </span>
-            </a>
-          </NextLink>
-        </div> */}
       </div>
     </Modal>
   );

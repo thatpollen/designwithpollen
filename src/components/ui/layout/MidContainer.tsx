@@ -3,5 +3,7 @@ export default function MidContainer({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="max-w-[1204px] w-full px-6 mx-auto">{children}</div>;
+  return (
+    <div className="max-w-[1200px] w-full px-4 sm:px-6 mx-auto">{children}</div>
+  );
 }

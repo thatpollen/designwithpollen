@@ -30,19 +30,19 @@ export default function Modal({ children }: { children: React.ReactNode }) {
       >
         <div className="s-modal flex justify-center items-center gap-4 fixed inset-0 z-[1001]">
           {/* <Container> */}
-          <div className="flex justify-end xl:justify-center items-center px-12 py-6 w-full h-full">
+          <div className="flex justify-center items-center p-4 sm:p-6 bg-zinc-[rgba(9, 9, 11, 0.72)] backdrop-blur-2xl w-full h-full">
             <TransitionChild as={Fragment} {...transitionClasses}>
               <DialogPanel
                 data-lenis-prevent
                 as="div"
-                className="modal flex flex-col w-full h-full max-w-[1024px] overflow-y-auto relative z-[11] bg-white rounded-lg"
+                className="modal flex flex-col w-full h-full max-w-[1024px] overflow-y-auto relative z-[11] bg-white rounded-2xl"
               >
-                <div className="close_btn flex justify-end items-stretch py-6 px-8 sticky top-0 z-[12] bg-white border-b border-[rgba(0,0,0,0.08)]">
+                <div className="close_btn flex justify-end items-stretch py-4 px-4 sticky top-0 z-[12] bg-white border-b border-zinc-200">
                   <button
                     onClick={handleClose}
                     className="flex justify-start items-center gap-2 cursor-pointer"
                   >
-                    <span className="text-black">Close</span>
+                    <span className="text-zinc-950">Close</span>
                     <span>
                       <Close />
                     </span>
