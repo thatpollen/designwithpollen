@@ -33,7 +33,7 @@ export default function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={1000}
                 className="hidden sm:block cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
@@ -45,7 +45,7 @@ export default function Navbar() {
                 to="works"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={1000}
                 className="hidden sm:block cursor-pointer px-4 py-2 text-sm font-semibold border border-[rgba(188,237,4,0)] rounded-[32px] transition-all duration-100 hover:border hover:border-[rgba(188,237,4,0.16)] hover:bg-[rgba(188,237,4,0.08)]"
               >
