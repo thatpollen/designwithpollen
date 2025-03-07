@@ -36,7 +36,7 @@ export default function About() {
               </figure>
               <figure className="aspect-square overflow-hidden rounded-tr rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
                 <NextImage
-                  src="/profile/profile-1.jpg"
+                  src="/profile/profile-1.JPG"
                   alt="profile-image"
                   width={100}
                   height={100}

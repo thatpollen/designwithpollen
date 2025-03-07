@@ -72,7 +72,7 @@ export default function AboutDialog({ isOpen, setIsOpen }: AboutDialogProps) {
               <div className="flex gap-2">
                 <figure className="rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
                   <NextImage
-                    src="/profile/profile-1.jpg"
+                    src="/profile/profile-1.JPG"
                     alt="profile-img"
                     width={288}
                     height={384}
