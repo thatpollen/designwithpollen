@@ -13,7 +13,7 @@ export default function About() {
       <div className="relative overflow-hidden py-16">
         <div className="max-w-[966px] mx-auto px-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-12 bg-[rgba(23,23,23,1)] py-8 px-6 sm:px-8 sm:py-12 md:px-6 rounded-2xl">
-            <div className="grid grid-cols-2 gap-2 w-1/3">
+            <div className="grid grid-cols-2 gap-2 w-auto sm:w-1/3">
               <figure className="aspect-square overflow-hidden rounded-br rounded-4xl bg-white grayscale hover:grayscale-0 duration-200 transition-colors">
                 <NextImage
                   src="/profile/profile-4.jpg"
@@ -56,7 +56,7 @@ export default function About() {
               </figure>
             </div>
 
-            <div className="flex flex-col items-start gap-4 w-2/3">
+            <div className="flex flex-col items-start gap-4 w-full sm:w-2/3">
               <h2 className="text-2xl font-semibold font-playwrite">
                 About me
               </h2>

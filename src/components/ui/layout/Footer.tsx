@@ -14,7 +14,7 @@ export default function Footer() {
               <h2 className="font-semibold text-4xl sm:text-5xl leading-[52.8px] text-white">
                 Let&apos;s work together
               </h2>
-              <Link href="/">
+              <Link href="mailto:talkspollen@gmail.com">
                 <button className="bg-brand px-3 py-2 flex items-center gap-1 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-semibold leading-[18px] text-neutral-900 cursor-pointer">
                   Contact me
                   <ArrowUpRight size={16} />
