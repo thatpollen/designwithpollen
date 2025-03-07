@@ -85,9 +85,9 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           className="w-full h-auto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-2 text-zinc-500 font-normal">
+        <div className="flex flex-col gap-2 font-normal">
           <h4 className="text-xl font-semibold text-zinc-950">Overview</h4>
-          <p className="text-charcoal">{post?.projectIntro}</p>
+          <p className="text-zinc-500">{post?.projectIntro}</p>
         </div>
         <NextImage
           src={post?.firstImage?.asset?.url}
@@ -97,9 +97,9 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           className="w-fullauto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-2 text-zinc-500">
+        <div className="flex flex-col gap-2">
           <h4 className="text-xl font-semibold text-zinc-950">Goal</h4>
-          <p className="text-charcoal">{post?.projectGoal}</p>
+          <p className="text-zinc-500">{post?.projectGoal}</p>
         </div>
         <NextImage
           src={post?.secondImage?.asset?.url}
@@ -109,9 +109,9 @@ export default async function ProjectModalPage({ params }: ProjectProps) {
           className="w-full h-auto max-w-full rounded-xl shadow-sm"
           priority
         />
-        <div className="flex flex-col gap-4 p-8 text-[#222831]">
-          <h6 className="text-sm font-bold">/Solution</h6>
-          <p className="text-charcoal">{post?.projectSolution}</p>
+        <div className="flex flex-col gap-2">
+          <h6 className="text-xl font-semibold text-zinc-950">Solution</h6>
+          <p className="text-zinc-500">{post?.projectSolution}</p>
         </div>
         <NextImage
           src={post?.thirdImage?.asset?.url}

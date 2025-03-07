@@ -76,12 +76,12 @@ export default async function Home() {
                     </div>
 
                     <div className="project_name flex flex-col gap-6 p-6 overflow-hidden relative">
-                      <div className="flex flex-col gap-1">
+                      <div className="flex flex-col gap-2">
                         <span className="font-playwrite text-brand text-xs">
                           {" "}
                           year {post?.projectYear}
                         </span>
-                        <h6 className="text-lg font-medium text-white">
+                        <h6 className="text-xl font-medium text-white">
                           {post?.title}
                         </h6>
                         <p className="text-sm text-neutral-400">
