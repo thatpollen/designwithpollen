@@ -2,6 +2,7 @@ import Navbar from "@/components/ui/layout/Navbar";
 import Hero from "@/components/ui/body/Hero";
 import About from "@/components/ui/body/About";
 import Framer from "@/components/ui/body/Framer";
+import DesignSystem from "@/components/ui/body/DesignSystem";
 import Works from "@/components/ui/body/Works";
 import Footer from "@/components/ui/layout/Footer";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
@@ -44,13 +45,12 @@ export default async function Home() {
       <Loader />
       <main>
         <CustomCursor />
-        {/* <VerticalLines /> */}
-        {/* <FloatingEl/> */}
         <Navbar />
         <Hero />
         <About />
         <Framer />
-        <ReactNext />
+        <DesignSystem />
+        {/* <ReactNext /> */}
 
         <Works>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

@@ -8,9 +8,9 @@ export default function ReactNext() {
   return (
     <section>
       <MidContainer>
-        <div className="w-full flex flex-col gap-12 py-24">
-          <div className="flex flex-col items-stretch md:flex-row justify-between md:items-center gap-6 md:gap-0 px-6">
-            <div className="max-w-[480px] flex flex-col gap-2">
+        <div className="w-full flex flex-col gap-6 sm:gap-12 py-24">
+          <div className="flex flex-col items-stretch md:flex-row justify-between md:items-center gap-6 md:gap-0">
+            <div className="max-w-full sm:max-w-[480px] flex flex-col gap-2">
               <div className="flex gap-2 items-center">
                 <span>
                   <ReactIcon />
@@ -20,7 +20,8 @@ export default function ReactNext() {
                 </h5>
               </div>
               <p className="text-sm text-neutral-400">
-              Showcasing my work built with React, highlighting dynamic, responsive, and user-friendly websites.
+                Showcasing my work built with React, highlighting dynamic,
+                responsive, and user-friendly websites.
               </p>
             </div>
             <NextLink href="/react-projects">
@@ -30,7 +31,7 @@ export default function ReactNext() {
               </button>
             </NextLink>
           </div>
-          <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
+          <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3">
             {reactProjects?.slice(0, 3)?.map((project, index) => (
               <div
                 className="rounded-3xl overflow-hidden bg-neutral-900"

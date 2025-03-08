@@ -15,7 +15,7 @@ export default function Hero() {
                 web3 focused
               </span>
             </div>
-            <h1 className="text-5xl sm:text-6xl leading-[1] text-center font-medium text-neutral-50">
+            <h1 className="text-5xl sm:text-6xl leading-[1] text-center font-semibold text-neutral-50">
               Product designer <br />
               and developer
             </h1>
