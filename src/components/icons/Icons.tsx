@@ -128,4 +128,41 @@ const LinkArrow = () => {
   );
 };
 
-export { Eet, WhatsApp, Arrow, Close, LinkArrow };
+const ReactIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="21"
+    fill="none"
+    viewBox="0 0 20 21"
+  >
+    <g clipPath="url(#clip0_83_97)">
+      <path
+        fill="#087EA4"
+        d="M10 12.405a1.905 1.905 0 1 0 0-3.81 1.905 1.905 0 0 0 0 3.81"
+      ></path>
+      <path
+        stroke="#087EA4"
+        strokeWidth="0.952"
+        d="M10 14.786c5.26 0 9.524-1.92 9.524-4.286 0-2.367-4.264-4.286-9.524-4.286S.476 8.133.476 10.5 4.74 14.786 10 14.786Z"
+      ></path>
+      <path
+        stroke="#087EA4"
+        strokeWidth="0.952"
+        d="M6.288 12.643c2.63 4.555 6.424 7.288 8.474 6.105 2.05-1.184 1.58-5.836-1.05-10.39-2.63-4.556-6.424-7.29-8.474-6.106s-1.58 5.836 1.05 10.39Z"
+      ></path>
+      <path
+        stroke="#087EA4"
+        strokeWidth="0.952"
+        d="M6.288 8.357c-2.63 4.555-3.1 9.207-1.05 10.39 2.05 1.184 5.844-1.549 8.473-6.104s3.1-9.207 1.05-10.39c-2.049-1.184-5.843 1.549-8.473 6.104Z"
+      ></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_83_97">
+        <path fill="#fff" d="M0 .5h20v20H0z"></path>
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export { Eet, WhatsApp, Arrow, Close, LinkArrow, ReactIcon };

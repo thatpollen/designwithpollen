@@ -1,8 +1,8 @@
 import { ArrowUpRight, FramerIcon } from "lucide-react";
 import MidContainer from "../layout/MidContainer";
-import NextImage from "next/image";
 import NextLink from "next/link";
 import { reactProjects } from "@/devprojects/react-projects";
+import { ReactIcon } from "@/components/icons/Icons";
 
 export default function ReactNext() {
   return (
@@ -13,10 +13,10 @@ export default function ReactNext() {
             <div className="max-w-[480px] flex flex-col gap-2">
               <div className="flex gap-2 items-center">
                 <span>
-                  <FramerIcon className="fill-white" size={16} />
+                  <ReactIcon />
                 </span>
                 <h5 className="text-2xl font-semibold text-white">
-                  Develop with Framer
+                  Develop with React
                 </h5>
               </div>
               <p className="text-sm text-neutral-400">
@@ -35,7 +35,7 @@ export default function ReactNext() {
           <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
             {reactProjects?.slice(0, 3)?.map((project, index) => (
               <div
-                className="rounded-4xl overflow-hidden bg-neutral-900"
+                className="rounded-3xl overflow-hidden bg-neutral-900"
                 key={index}
               >
                 <figure className="aspect-3/2 rounded-t-2xl bg-[conic-gradient(from_180deg_at_50%_50%,_#4F46E5_0deg,_#818CF8_360deg)]">

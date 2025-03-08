@@ -34,7 +34,7 @@ export default function Framer() {
           <div className="grid grid-cols-1 min-[56rem]:grid-cols-3 gap-3 px-6">
             {framerProjects?.slice(0, 3)?.map((project, index) => (
               <div
-                className="rounded-4xl overflow-hidden bg-neutral-900"
+                className="rounded-3xl overflow-hidden bg-neutral-900"
                 key={index}
               >
                 <figure className="aspect-3/2">

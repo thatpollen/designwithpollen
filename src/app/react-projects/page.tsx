@@ -9,7 +9,7 @@ export default function ReactProject() {
         <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
           {reactProjects?.map((project, index) => (
             <div
-              className="rounded-4xl overflow-hidden bg-neutral-900"
+              className="rounded-3xl overflow-hidden bg-neutral-900"
               key={index}
             >
               <figure className="aspect-3/2 rounded-t-2xl bg-[conic-gradient(from_180deg_at_50%_50%,_#4F46E5_0deg,_#818CF8_360deg)]">
