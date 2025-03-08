@@ -2,34 +2,7 @@ import { ArrowUpRight, FramerIcon } from "lucide-react";
 import MidContainer from "../layout/MidContainer";
 import NextImage from "next/image";
 import NextLink from "next/link";
-
-interface ReactProjectProps {
-  name?: string;
-  projectYear?: string;
-  imgSource?: string;
-  url?: string;
-}
-
-const reactProjects: ReactProjectProps[] = [
-  {
-    name: "Mad Metaverse",
-    projectYear: "2022",
-    imgSource: "",
-    url: "",
-  },
-  {
-    name: "Helvet Finance",
-    projectYear: "2022",
-    imgSource: "",
-    url: "",
-  },
-  {
-    name: "Ambidex",
-    projectYear: "2022",
-    imgSource: "",
-    url: "",
-  },
-];
+import { reactProjects } from "@/devprojects/react-projects";
 
 export default function ReactNext() {
   return (
@@ -52,19 +25,21 @@ export default function ReactNext() {
                 websites.
               </p>
             </div>
-            <button className="self-start md:self-end px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
-              View all
-              <ArrowUpRight size={16} />
-            </button>
+            <NextLink href="/react-projects">
+              <button className="self-start md:self-end px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
+                View all
+                <ArrowUpRight size={16} />
+              </button>
+            </NextLink>
           </div>
           <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
-            {reactProjects?.map((project, index) => (
+            {reactProjects?.slice(0, 3)?.map((project, index) => (
               <div
                 className="rounded-4xl overflow-hidden bg-neutral-900"
                 key={index}
               >
                 <figure className="aspect-3/2 rounded-t-2xl bg-[conic-gradient(from_180deg_at_50%_50%,_#4F46E5_0deg,_#818CF8_360deg)]">
-                  <NextImage
+                  {/* <NextImage
                     src={`${project?.imgSource}`}
                     alt={`${project?.name}`}
                     width={768}
@@ -72,7 +47,7 @@ export default function ReactNext() {
                     height={512}
                     className="max-w-full w-full h-full"
                     priority
-                  />
+                  /> */}
                 </figure>
                 <div className="p-6 flex flex-col items-start gap-4">
                   <div className="w-full flex justify-between items-center">

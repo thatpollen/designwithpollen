@@ -1,35 +1,7 @@
 import { ArrowUpRight, FramerIcon } from "lucide-react";
 import MidContainer from "../layout/MidContainer";
-import NextImage from "next/image";
 import NextLink from "next/link";
-
-interface FramerProjectProps {
-  name?: string;
-  projectYear?: string;
-  imgSource?: string;
-  url?: string;
-}
-
-const framerProjects: FramerProjectProps[] = [
-  {
-    name: "Bold Marketing",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-1.gif",
-    url: "",
-  },
-  {
-    name: "Unwynd",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-2.gif",
-    url: "",
-  },
-  {
-    name: "Arnob Portfolio",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-3.gif",
-    url: "",
-  },
-];
+import { framerProjects } from "@/devprojects/framer-projects";
 
 export default function Framer() {
   return (
@@ -52,26 +24,29 @@ export default function Framer() {
                 websites.
               </p>
             </div>
-            <button className="self-start md:self-end px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
-              View all
-              <ArrowUpRight size={16} />
-            </button>
+            <NextLink href="/framer-projects">
+              <button className="self-start md:self-end px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs fontext-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
+                View all
+                <ArrowUpRight size={16} />
+              </button>
+            </NextLink>
           </div>
           <div className="grid grid-cols-1 min-[56rem]:grid-cols-3 gap-3 px-6">
-            {framerProjects?.map((project, index) => (
+            {framerProjects?.slice(0, 3)?.map((project, index) => (
               <div
                 className="rounded-4xl overflow-hidden bg-neutral-900"
                 key={index}
               >
                 <figure className="aspect-3/2">
-                  <NextImage
-                    src={`${project?.imgSource}`}
-                    alt={`${project?.name}`}
-                    width={768}
-                    // height={1024}
-                    height={512}
+                  <video
                     className="max-w-full w-full h-full"
-                  />
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src={project?.imgSource} type="video/mp4" />
+                  </video>
                 </figure>
                 <div className="p-6 flex flex-col items-start gap-4">
                   <div className="w-full flex justify-between items-center">
