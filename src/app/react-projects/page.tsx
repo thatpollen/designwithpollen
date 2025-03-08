@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function ReactProject() {
   return (
-    <main className="bg-zinc-950 text-zinc-50 h-full">
+    <main>
       <div className="py-24">
         <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
           {reactProjects?.map((project, index) => (

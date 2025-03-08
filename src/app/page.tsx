@@ -42,7 +42,7 @@ export default async function Home() {
   return (
     <>
       <Loader />
-      <main className="bg-zinc-950">
+      <main>
         <CustomCursor />
         {/* <VerticalLines /> */}
         {/* <FloatingEl/> */}

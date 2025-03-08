@@ -52,22 +52,22 @@ export default function AboutDialog({ isOpen, setIsOpen }: AboutDialogProps) {
                   </p>
 
                   <div className="flex gap-2">
-                    <figure className="rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
+                    <figure className="w-1/2 rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
                       <NextImage
                         src="/profile/profile-4.jpg"
                         alt="profile-img"
-                        width={1023}
-                        height={1364}
+                        width={768}
+                        height={1024}
                         className="object-cover w-full h-full"
                         priority
                       />
                     </figure>
-                    <figure className="rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
+                    <figure className="w-1/2 rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
                       <NextImage
                         src="/profile/profile-3.jpg"
                         alt="profile-img"
-                        width={1023}
-                        height={1364}
+                        width={768}
+                        height={1024}
                         className="object-cover w-full h-full"
                         priority
                       />
@@ -86,22 +86,22 @@ export default function AboutDialog({ isOpen, setIsOpen }: AboutDialogProps) {
                     products not just usable but also enjoyable.
                   </p>
                   <div className="flex gap-2">
-                    <figure className="rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
+                    <figure className="w-1/2 rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
                       <NextImage
                         src="/profile/profile-1.JPG"
                         alt="profile-img"
-                        width={1023}
-                        height={1364}
+                        width={768}
+                        height={1024}
                         className="object-cover w-full h-full"
                         priority
                       />
                     </figure>
-                    <figure className="rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
+                    <figure className="w-1/2 rounded-2xl grayscale hover:grayscale-0 duration-200 transition-colors overflow-hidden aspect-3/4">
                       <NextImage
                         src="/profile/profile-2.jpg"
                         alt="profile-img"
-                        width={1023}
-                        height={1364}
+                        width={768}
+                        height={1024}
                         className="object-cover w-full h-full"
                         priority
                       />
