@@ -6,8 +6,6 @@ import DesignSystem from "@/components/ui/body/DesignSystem";
 import Works from "@/components/ui/body/Works";
 import Footer from "@/components/ui/layout/Footer";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
-import Loader from "@/components/ui/assets/Loader";
-import ReactNext from "@/components/ui/body/ReactNext";
 
 import NextImage from "next/image";
 import NextLink from "next/link";
@@ -42,7 +40,6 @@ export default async function Home() {
 
   return (
     <>
-      <Loader />
       <main>
         <CustomCursor />
         <Navbar />

@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { inter } from "@/lib/utils/fonts";
+import Loader from "@/components/ui/assets/Loader";
 
 export const metadata: Metadata = {
   title: "Product designer and developer",
@@ -50,6 +51,7 @@ export default function RootLayout({
         className={`${inter.variable} antialiased text-zinc-50 bg-zinc-950`}
       >
         <SmoothScroll>
+          <Loader />
           {children}
           {modal}
         </SmoothScroll>
