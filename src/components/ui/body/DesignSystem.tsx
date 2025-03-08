@@ -32,7 +32,7 @@ export default function DesignSystem() {
             <div className="flex flex-col gap-8 w-full md:w-3/5">
               {/* text wrapper */}
               <div className="flex flex-col self-start gap-3">
-                <h2 className="text-4xl font-semibold leading-normal bg-clip-text">
+                <h2 className="text-4xl font-semibold leading-normal text-neutral-50">
                   Design system
                 </h2>
                 <p className="text-sm font-medium text-neutral-300 leading-normal">
