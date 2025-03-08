@@ -3,35 +3,35 @@ import MidContainer from "../layout/MidContainer";
 import NextImage from "next/image";
 import NextLink from "next/link";
 
-interface FramerProjectProps {
+interface ReactProjectProps {
   name?: string;
   projectYear?: string;
   imgSource?: string;
   url?: string;
 }
 
-const framerProjects: FramerProjectProps[] = [
+const reactProjects: ReactProjectProps[] = [
   {
-    name: "Bold Marketing",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-1.gif",
+    name: "Mad Metaverse",
+    projectYear: "2022",
+    imgSource: "",
     url: "",
   },
   {
-    name: "Unwynd",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-2.gif",
+    name: "Helvet Finance",
+    projectYear: "2022",
+    imgSource: "",
     url: "",
   },
   {
-    name: "Arnob Portfolio",
-    projectYear: "2025",
-    imgSource: "/gif/framer-gif-3.gif",
+    name: "Ambidex",
+    projectYear: "2022",
+    imgSource: "",
     url: "",
   },
 ];
 
-export default function Framer() {
+export default function ReactNext() {
   return (
     <section>
       <MidContainer>
@@ -57,13 +57,13 @@ export default function Framer() {
               <ArrowUpRight size={16} />
             </button>
           </div>
-          <div className="grid grid-cols-1 min-[56rem]:grid-cols-3 gap-3 px-6">
-            {framerProjects?.map((project, index) => (
+          <div className="grid grid-cols-1  min-[56rem]:grid-cols-3 gap-3 px-6">
+            {reactProjects?.map((project, index) => (
               <div
                 className="rounded-4xl overflow-hidden bg-neutral-900"
                 key={index}
               >
-                <figure className="aspect-3/2">
+                <figure className="aspect-3/2 rounded-t-2xl bg-[conic-gradient(from_180deg_at_50%_50%,_#4F46E5_0deg,_#818CF8_360deg)]">
                   <NextImage
                     src={`${project?.imgSource}`}
                     alt={`${project?.name}`}
@@ -71,6 +71,7 @@ export default function Framer() {
                     // height={1024}
                     height={512}
                     className="max-w-full w-full h-full"
+                    priority
                   />
                 </figure>
                 <div className="p-6 flex flex-col items-start gap-4">

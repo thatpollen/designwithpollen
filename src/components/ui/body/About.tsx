@@ -61,7 +61,7 @@ export default function About() {
 
           <div className="flex flex-col items-start gap-4 w-full max-w-[580px] sm:w-2/3">
             <h2 className="text-2xl font-semibold font-inter">About me</h2>
-            <p className="text-sm font-medium leading-sm/7 text-neutral-400">
+            <p className="text-sm font-medium leading-sm/7 text-neutral-300">
               Hello there! I&apos;m Pollen Chakma, a product designer and
               front-end developer from Rangamati, near the India and Myanmar
               border. My journey started about 10 years ago as an email
@@ -69,15 +69,14 @@ export default function About() {
               transitioned into UX/UI design. Recently, I&apso;ve expanded my
               skills to include JavaScript, React, Next.js, Tailwind, and
               Storybook, which allows me to work more closely on product design
-              and development.
+              and development.{" "}
+              <span
+                className="text-sm font-medium text-brand cursor-pointer"
+                onClick={() => setIsOpen(true)}
+              >
+                Read more...
+              </span>
             </p>
-
-            <button
-              className="text-sm font-medium text-brand cursor-pointer"
-              onClick={() => setIsOpen(true)}
-            >
-              Read more...
-            </button>
           </div>
         </div>
       </MidContainer>
