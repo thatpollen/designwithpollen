@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment } from "react";
-import Container from "../layout/Container";
 import { Close } from "../../icons/Icons";
 import {
   Dialog,
@@ -11,13 +10,21 @@ import {
 } from "@headlessui/react";
 import { useRouter, usePathname } from "next/navigation";
 import { transitionClasses } from "@/lib/transitions";
+import { useState } from "react";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   const router = useRouter();
-  const handleClose = () => router.back();
-
   const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(true);
+
   if (pathname === "/") return null;
+
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(() => {
+      router.back();
+    }, 300);
+  };
 
   return (
     <Transition appear show={true} as={Fragment}>
@@ -30,8 +37,16 @@ export default function Modal({ children }: { children: React.ReactNode }) {
       >
         <div className="s-modal flex justify-center items-center gap-4 fixed inset-0 z-[1001]">
           {/* <Container> */}
-          <div className="flex justify-center items-center p-4 sm:p-6 bg-zinc-[rgba(9, 9, 11, 0.72)] backdrop-blur-2xl w-full h-full">
-            <TransitionChild as={Fragment} {...transitionClasses}>
+          <div className="flex justify-center items-center p-4 sm:p-6 bg-[rgba(9,9,11,0.72)] backdrop-blur-2xl w-full h-full">
+            <TransitionChild
+              as={Fragment}
+              enter={transitionClasses.enter}
+              enterFrom={transitionClasses.enterFrom}
+              enterTo={transitionClasses.enterTo}
+              leave={transitionClasses.leave}
+              leaveFrom={transitionClasses.leaveFrom}
+              leaveTo={transitionClasses.leaveTo}
+            >
               <DialogPanel
                 data-lenis-prevent
                 as="div"

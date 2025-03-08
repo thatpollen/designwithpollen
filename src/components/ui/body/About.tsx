@@ -21,8 +21,8 @@ export default function About() {
               <NextImage
                 src="/profile/profile-4.jpg"
                 alt="profile-image"
-                width={100}
-                height={100}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover"
                 priority
               />
@@ -31,8 +31,8 @@ export default function About() {
               <NextImage
                 src="/profile/profile-3.jpg"
                 alt="profile-image"
-                width={100}
-                height={100}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover"
                 priority
               />
@@ -41,8 +41,8 @@ export default function About() {
               <NextImage
                 src="/profile/profile-1.JPG"
                 alt="profile-image"
-                width={100}
-                height={100}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover"
                 priority
               />
@@ -51,8 +51,8 @@ export default function About() {
               <NextImage
                 src="/profile/profile-2.jpg"
                 alt="profile-image"
-                width={100}
-                height={100}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover"
                 priority
               />

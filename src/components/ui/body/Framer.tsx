@@ -1,10 +1,99 @@
+import { ArrowUpRight, FramerIcon } from "lucide-react";
 import MidContainer from "../layout/MidContainer";
+import NextImage from "next/image";
+import NextLink from "next/link";
+
+interface ProjectProps {
+  name?: string;
+  projectYear?: string;
+  imgSource?: string;
+  url?: string;
+}
+
+const framerProjects = [
+  {
+    name: "Bold Marketing",
+    projectYear: "2025",
+    imgSource: "/gif/framer-gif-1.gif",
+    url: "",
+  },
+  {
+    name: "Unwynd",
+    projectYear: "2025",
+    imgSource: "/gif/framer-gif-2.gif",
+    url: "",
+  },
+  {
+    name: "Arnob Portfolio",
+    projectYear: "2025",
+    imgSource: "/gif/framer-gif-3.gif",
+    url: "",
+  },
+];
 
 export default function Framer() {
   return (
     <section>
       <MidContainer>
-        <div className="wrapper bg-yellow-50 py-6">Hello</div>
+        <div className="w-full flex flex-col gap-12 py-24">
+          <div className="flex flex-col items-stretch md:flex-row justify-between md:items-center gap-6 md:gap-0 px-6">
+            <div className="max-w-[480px] flex flex-col gap-2">
+              <div className="flex gap-2 items-center">
+                <span>
+                  <FramerIcon className="fill-white" size={16} />
+                </span>
+                <h5 className="text-2xl font-semibold text-white">
+                  Develop with Framer
+                </h5>
+              </div>
+              <p className="text-sm text-neutral-400">
+                Explore my Framer development projects, where design meets
+                seamless interactivity for high-performance, visually stunning
+                websites.
+              </p>
+            </div>
+            <button className="self-start md:self-end px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
+              View all
+              <ArrowUpRight size={16} />
+            </button>
+          </div>
+          <div className="grid grid-cols-1 @4xl:grid-cols-3 gap-3 px-6">
+            {framerProjects?.map((project, index) => (
+              <div
+                className="rounded-4xl overflow-hidden bg-neutral-900"
+                key={index}
+              >
+                <figure className="aspect-3/2">
+                  <NextImage
+                    src={project?.imgSource}
+                    alt={project?.name}
+                    width={768}
+                    // height={1024}
+                    height={512}
+                    className="max-w-full w-full h-full"
+                    priority
+                  />
+                </figure>
+                <div className="p-6 flex flex-col items-start gap-4">
+                  <div className="w-full flex justify-between items-center">
+                    <span className="text-lg font-medium text-white">
+                      {project?.name}
+                    </span>
+                    <span className="font-playwrite text-brand text-xs">
+                      year {project?.projectYear}
+                    </span>
+                  </div>
+                  <NextLink href={`${project?.url}`}>
+                    <button className="px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
+                      Live link
+                      <ArrowUpRight size={16} />
+                    </button>
+                  </NextLink>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </MidContainer>
     </section>
   );

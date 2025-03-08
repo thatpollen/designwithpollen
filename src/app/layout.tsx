@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: "Product designer and developer",
   description:
     "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
+  icons: {
+    icon: [
+      {
+        url: "/Avatar.png",
+        href: "/Avatar.png",
+      },
+    ],
+  },
   metadataBase: new URL("https://designwithpollen.com"),
   // metadataBase: new URL("https://designwithpollen.vercel.app"),
   openGraph: {

@@ -1,8 +1,8 @@
 export const transitionClasses = {
-  enter: "ease-out duration-500",
-  enterFrom: "opacity-0 scale-95",
-  enterTo: "opacity-100 scale-100",
-  leave: "ease-in duration-300",
-  leaveFrom: "opacity-100 scale-100",
-  leaveTo: "opacity-0 scale-95",
+  enter: "transition ease-in duration-200",
+  enterFrom: "opacity-0 scale-98 transform",
+  enterTo: "opacity-100 scale-100 transform",
+  leave: "transition ease-out duration-150",
+  leaveFrom: "opacity-100 scale-100 transform",
+  leaveTo: "scale-98 opacity-0 transform",
 };
