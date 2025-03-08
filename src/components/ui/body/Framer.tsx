@@ -15,7 +15,7 @@ export default function Framer() {
                   <FramerIcon className="fill-white" size={16} />
                 </span>
                 <h5 className="text-2xl font-semibold text-white">
-                  Develop with Framer
+                  Developed with Framer
                 </h5>
               </div>
               <p className="text-sm text-neutral-400">

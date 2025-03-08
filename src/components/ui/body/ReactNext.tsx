@@ -16,13 +16,11 @@ export default function ReactNext() {
                   <ReactIcon />
                 </span>
                 <h5 className="text-2xl font-semibold text-white">
-                  Develop with React
+                  Developed with React
                 </h5>
               </div>
               <p className="text-sm text-neutral-400">
-                Explore my Framer development projects, where design meets
-                seamless interactivity for high-performance, visually stunning
-                websites.
+              Showcasing my work built with React, highlighting dynamic, responsive, and user-friendly websites.
               </p>
             </div>
             <NextLink href="/react-projects">

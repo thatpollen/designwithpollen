@@ -12,7 +12,7 @@ export default function Navbar() {
         <MidContainer>
           <div className="flex justify-between items-center">
             <div className="nav_left">
-              <div>
+              <NextLink href="/">
                 <figure className="w-10 h-10 overflow-hidden rounded-xl">
                   <NextImage
                     src="/Avatar.png"
@@ -23,7 +23,7 @@ export default function Navbar() {
                     priority
                   />
                 </figure>
-              </div>
+              </NextLink>
             </div>
 
             <div className="nav_middle flex justify-start items-center gap-0 px-1.5 py-1 overflow-hidden bg-dark border border-zinc-800 rounded-2xl backdrop-blur-[5px] max-w-max text-zinc-50">

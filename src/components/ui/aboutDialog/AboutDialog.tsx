@@ -31,7 +31,7 @@ export default function AboutDialog({ isOpen, setIsOpen }: AboutDialogProps) {
               <DialogPanel
                 data-lenis-prevent
                 as="div"
-                className="modal flex flex-col w-full h-full max-w-[780px] overflow-y-auto relative z-[11] bg-white rounded-2xl p-12"
+                className="modal flex flex-col w-full h-full max-w-[780px] overflow-y-auto relative z-[11] bg-white rounded-2xl p-6 sm:p-12"
               >
                 <div className="flex flex-col gap-6 text-neutral-900">
                   <div className="flex justify-between items-center">
