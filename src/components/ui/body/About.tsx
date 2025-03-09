@@ -67,16 +67,16 @@ export default function About() {
               border. My journey started about 10 years ago as an email
               developer through freelance work. Three years later, I
               transitioned into UX/UI design. Recently, I&apos;ve expanded my
-              skills to include JavaScript, React, Next.js, Tailwind, and
-              Storybook, which allows me to work more closely on product design
-              and development.{" "}
-              <span
-                className="text-sm font-medium text-brand cursor-pointer"
-                onClick={() => setIsOpen(true)}
-              >
-                Read more...
-              </span>
+              skills to include JavaScript, React, Next.js and Tailwind which
+              allows me to work more closely on product design and
+              development.{" "}
             </p>
+            <span
+              className="text-sm font-medium text-brand cursor-pointer flex items-center self-start gap-1"
+              onClick={() => setIsOpen(true)}
+            >
+              Read More <ArrowUpRight size={20} />
+            </span>
           </div>
         </div>
       </MidContainer>

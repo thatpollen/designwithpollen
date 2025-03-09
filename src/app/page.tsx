@@ -91,9 +91,9 @@ export default async function Home() {
                         href={`/project/${post?.slug?.current}`}
                         scroll={false}
                       >
-                        <button className="flex items-center gap-1 px-3 py-2 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 ">
+                        <button className="flex items-center gap-1 px-3 py-2 border border-zinc-700 rounded-xl text-sm font-medium text-white cursor-pointer hover:bg-zinc-800 ">
                           Preview
-                          <ArrowUpRight size={16} />
+                          <ArrowUpRight size={20} />
                         </button>
                       </NextLink>
                     </div>

@@ -6,9 +6,9 @@ import { inter } from "@/lib/utils/fonts";
 import Loader from "@/components/ui/assets/Loader";
 
 export const metadata: Metadata = {
-  title: "Product designer and developer",
+  title: "Product Designer and Developer",
   description:
-    "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
+    "Hello there! I'm Pollen Chakma, a product designer and front-end developer from Rangamati, near the India and Myanmar border. My journey started about 10 years ago as an email developer through freelance work. Three years later, I transitioned into UX/UI design. Recently, I've expanded my skills to include JavaScript, React, Next.js, Tailwind, and Storybook, which allows me to work more closely on product design and development. Over the years, I've collaborated with various web3 startups like Jigstack, Precog Finance, Ambidex, Fringe, and Biga Arcade etc. I love to explore micro-interactions that enhance user experience, making products not just usable but also enjoyable.",
   icons: {
     icon: [
       {
@@ -18,13 +18,11 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL("https://designwithpollen.com"),
-  // metadataBase: new URL("https://designwithpollen.vercel.app"),
   openGraph: {
-    title: "Product designer and developer",
+    title: "Product Designer and Developer",
     description:
-      "Experienced Freelance UX/UI Designer & Developer with a proven track record spanning 9+ years. Passionate about creating compelling user experiences through innovative design and development solutions. Let's collaborate to bring your digital vision to life!",
+      "Hello there! I'm Pollen Chakma, a product designer and front-end developer from Rangamati, near the India and Myanmar border. My journey started about 10 years ago as an email developer through freelance work. Three years later, I transitioned into UX/UI design. Recently, I've expanded my skills to include JavaScript, React, Next.js, Tailwind, and Storybook, which allows me to work more closely on product design and development. Over the years, I've collaborated with various web3 startups like Jigstack, Precog Finance, Ambidex, Fringe, and Biga Arcade etc. I love to explore micro-interactions that enhance user experience, making products not just usable but also enjoyable.",
     url: "https://designwithpollen.com",
-    // url: "https://designwithpollen.vercel.app",
     siteName: "Design with Pollen",
     images: {
       url: "/opengraph-image.png",
