@@ -41,7 +41,7 @@ export default function DesignSystem() {
                   includes reusable parts like buttons, forms, and menus, as
                   well as simple rules for colors, fonts, and spacing. Using
                   this system helps me create designs that look good, work well,
-                  and stay consistent across all projects. It&apso;s a great
+                  and stay consistent across all projects. It&apos;s a great
                   tool for quickly building clean and user-friendly designs.
                 </p>
               </div>
