@@ -44,7 +44,7 @@ export default function ReactNext() {
                     width={768}
                     // height={1024}
                     height={512}
-                    className="max-w-full w-full h-full"
+                    className="max-w-full w-auto h-auto"
                     priority
                   /> */}
                 </figure>

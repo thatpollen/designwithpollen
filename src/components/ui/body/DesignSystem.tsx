@@ -32,7 +32,7 @@ export default function DesignSystem() {
             <div className="flex flex-col gap-8 w-full md:w-3/5">
               {/* text wrapper */}
               <div className="flex flex-col self-start gap-3">
-                <h2 className="text-4xl font-semibold leading-normal text-neutral-50">
+                <h2 className="text-4xl font-semibold leading-normal bg-linear-[91.08deg,rgba(253,224,71,1)_0.25%,rgba(188,237,10,1)_51.46%,rgba(10,207,131,1)_99.69%] bg-clip-text text-transparent">
                   Design system
                 </h2>
                 <p className="text-sm font-medium text-neutral-300 leading-normal">
@@ -41,7 +41,7 @@ export default function DesignSystem() {
                   includes reusable parts like buttons, forms, and menus, as
                   well as simple rules for colors, fonts, and spacing. Using
                   this system helps me create designs that look good, work well,
-                  and stay consistent across all projects. It&apso;s a great
+                  and stay consistent across all projects. It&apos;s a great
                   tool for quickly building clean and user-friendly designs.
                 </p>
               </div>

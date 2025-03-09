@@ -39,7 +39,7 @@ export default function Framer() {
               >
                 <figure className="aspect-3/2">
                   <video
-                    className="max-w-full w-full h-full"
+                    className="max-w-full w-auto h-auto"
                     autoPlay
                     loop
                     muted

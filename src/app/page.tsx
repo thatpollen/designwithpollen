@@ -60,13 +60,13 @@ export default async function Home() {
                         href={`/project/${post?.slug?.current}`}
                         scroll={false}
                       >
-                        <figure className="project_img flex flex-col justify-center items-center aspect-[4/3] relative overflow-hidden">
+                        <figure className="project_img group flex flex-col justify-center items-center aspect-[4/3] relative overflow-hidden">
                           <NextImage
                             src={`${post?.thumbnail?.asset?.url}`}
                             alt={post?.thumbnail?.alt}
                             width={570}
                             height={428}
-                            className="object-cover w-full h-full max-w-full"
+                            className="object-cover w-full h-full max-w-full group-hover:scale-109 transition-transform duration-300 ease-in-out"
                             priority
                           />
                         </figure>

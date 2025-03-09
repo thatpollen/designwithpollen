@@ -66,7 +66,7 @@ export default function About() {
               front-end developer from Rangamati, near the India and Myanmar
               border. My journey started about 10 years ago as an email
               developer through freelance work. Three years later, I
-              transitioned into UX/UI design. Recently, I&apso;ve expanded my
+              transitioned into UX/UI design. Recently, I&apos;ve expanded my
               skills to include JavaScript, React, Next.js, Tailwind, and
               Storybook, which allows me to work more closely on product design
               and development.{" "}
