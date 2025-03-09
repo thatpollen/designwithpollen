@@ -1,7 +1,5 @@
 import Modal from "@/components/ui/modal";
-import { LinkArrow } from "@/components/icons/Icons";
 import NextImage from "next/image";
-import NextLink from "next/link";
 import { client } from "../../../../../sanity/lib/client";
 import { unstable_noStore as noStore } from "next/cache";
 import type { ProjectProps } from "@/lib/types";

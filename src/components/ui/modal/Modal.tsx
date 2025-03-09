@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment } from "react";
-import { Close } from "../../icons/Icons";
 import {
   Dialog,
   DialogPanel,
@@ -11,6 +10,7 @@ import {
 import { useRouter, usePathname } from "next/navigation";
 import { transitionClasses } from "@/lib/transitions";
 import { useState } from "react";
+import { X } from "lucide-react";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -55,12 +55,10 @@ export default function Modal({ children }: { children: React.ReactNode }) {
                 <div className="close_btn flex justify-end items-stretch py-4 px-4 sticky top-0 z-[12] bg-white border-b border-zinc-200">
                   <button
                     onClick={handleClose}
-                    className="flex justify-start items-center gap-2 cursor-pointer"
+                    className="flex justify-start items-center gap-2 cursor-pointer text-zinc-950"
                   >
-                    <span className="text-zinc-950">Close</span>
-                    <span>
-                      <Close />
-                    </span>
+                    Close
+                    <X className="mt-0.5" size={20} />
                   </button>
                 </div>
                 {children}
