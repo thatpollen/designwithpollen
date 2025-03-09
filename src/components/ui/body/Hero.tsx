@@ -24,12 +24,12 @@ export default function Hero() {
             </h1>
             {/* CTA */}
             <div className="flex self-center items-center gap-4 pt-6 relative">
-              <div className="absolute top-0.5 left-1/2 -translate-x-1/2 -z-1">
+              <div className="absolute top-0.5 left-1/2 -translate-x-1/2 z-1">
                 <DribbbleLogo />
               </div>
               <NextLink href="https://dribbble.com/thatpollen" legacyBehavior>
                 <a target="_blank">
-                  <button className="flex items-center gap-1 text-sm font-medium py-2 px-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl outline-1 outline-zinc-800 outline-offset-4">
+                  <button className="flex items-center gap-1 text-sm font-medium py-2 px-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl outline-1 outline-zinc-800 outline-offset-4 cursor-pointer">
                     Design concepts <ArrowUpRight size={20} />
                   </button>
                 </a>
