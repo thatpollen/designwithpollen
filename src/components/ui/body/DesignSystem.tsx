@@ -35,14 +35,25 @@ export default function DesignSystem() {
                 <h2 className="text-4xl font-semibold leading-normal bg-linear-[91.08deg,rgba(253,224,71,1)_0.25%,rgba(188,237,10,1)_51.46%,rgba(10,207,131,1)_99.69%] bg-clip-text text-transparent">
                   Design system
                 </h2>
-                <p className="text-sm font-medium text-neutral-300 leading-normal">
-                  This design system is a toolkit I created to make designing
-                  websites, web apps, and mobile apps faster and easier. It
-                  includes reusable parts like buttons, forms, and menus, as
-                  well as simple rules for colors, fonts, and spacing. Using
-                  this system helps me create designs that look good, work well,
-                  and stay consistent across all projects. It&apos;s a great
-                  tool for quickly building clean and user-friendly designs.
+                <p className="text-sm font-medium text-neutral-300 leading-normal relative">
+                  This design system is a toolkit I created to make designing{" "}
+                  <span className="text-zinc-950 px-1 py-0.5 bg-brand rounded-sm">
+                    websites
+                  </span>
+                  ,{" "}
+                  <span className="text-zinc-950 px-1 py-0.5 bg-brand rounded-sm">
+                    web apps,
+                  </span>
+                  , and{" "}
+                  <span className="text-zinc-950 px-1 py-0.5 bg-brand rounded-sm">
+                    mobile apps
+                  </span>
+                  , faster and easier. It includes reusable parts like buttons,
+                  forms, and menus, as well as simple rules for colors, fonts,
+                  and spacing. Using this system helps me create designs that
+                  look good, work well, and stay consistent across all projects.
+                  It&apos;s a great tool for quickly building clean and
+                  user-friendly designs.
                 </p>
               </div>
 

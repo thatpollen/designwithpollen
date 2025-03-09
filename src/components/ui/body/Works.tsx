@@ -9,8 +9,8 @@ export default function Works({ children }: { children: React.ReactNode }) {
           {/* Inner container */}
           <div className="max-w-[580px] mx-auto flex flex-col gap-3">
             {/* title */}
-            <h5 className="text-2xl text-center font-semibold">
-              Web3 highlighted projects
+            <h5 className="text-2xl text-center font-semibold relative">
+              Web3 <span className="font-bold">highlighted</span> projects
             </h5>
             {/* subtext */}
             <p className="text-center text-zinc-400">

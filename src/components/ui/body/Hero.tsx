@@ -10,11 +10,11 @@ export default function Hero() {
         <MidContainer>
           <div className="max-w-[732px] mx-auto md:max-w-full flex flex-col items-stretch justify-start gap-3">
             <div className="flex justify-center gap-4">
-              <span className="font-playwrite text-base leading-6 text-lime-500 text-center">
+              <span className="font-playwrite text-base leading-6 text-brand text-center">
                 10 years in tech
               </span>
               <div className="w-px h-auto bg-[rgba(255,255,255,0.12)]"></div>
-              <span className="font-playwrite text-base leading-6 text-lime-500 text-center">
+              <span className="font-playwrite text-base leading-6 text-brand text-center">
                 web3 focused
               </span>
             </div>
@@ -23,8 +23,10 @@ export default function Hero() {
               and Developer
             </h1>
             {/* CTA */}
-            <div className="flex self-center items-center gap-4 pt-6">
-              <DribbbleLogo />
+            <div className="flex self-center items-center gap-4 pt-6 relative">
+              <div className="absolute top-0.5 left-1/2 -translate-x-1/2 -z-1">
+                <DribbbleLogo />
+              </div>
               <NextLink href="https://dribbble.com/thatpollen" legacyBehavior>
                 <a target="_blank">
                   <button className="flex items-center gap-1 text-sm font-medium py-2 px-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl outline-1 outline-zinc-800 outline-offset-4">
