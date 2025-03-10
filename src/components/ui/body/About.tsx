@@ -1,10 +1,11 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { useState } from "react";
 import NextImage from "next/image";
 import AboutDialog from "../aboutDialog/AboutDialog";
 import MidContainer from "../layout/MidContainer";
+import { LinkArrowButton } from "../button/LinkArrowButton";
 
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,12 +72,15 @@ export default function About() {
               allows me to work more closely on product design and
               development.{" "}
             </p>
-            <span
-              className="text-sm font-medium text-brand cursor-pointer flex items-center self-start gap-1"
-              onClick={() => setIsOpen(true)}
-            >
-              Read More <ArrowUpRight size={20} />
-            </span>
+            <div onClick={() => setIsOpen(true)}>
+              <LinkArrowButton
+                deg={45}
+                text="Read more"
+                className="text-sm font-medium text-brand cursor-pointer flex items-center self-start gap-1"
+              >
+                <ArrowUp size={20} />
+              </LinkArrowButton>
+            </div>
           </div>
         </div>
       </MidContainer>

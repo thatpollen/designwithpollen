@@ -1,6 +1,7 @@
 import MidContainer from "@/components/ui/layout/MidContainer";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { LinkArrowButton } from "../button/LinkArrowButton";
 
 export default function Footer() {
   let currentYear = new Date().getFullYear();
@@ -15,21 +16,26 @@ export default function Footer() {
                 Let&apos;s work together
               </h2>
               <Link href="mailto:talkspollen@gmail.com">
-                <button className="bg-brand px-3 py-2 flex items-center gap-1 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-semibold leading-[18px] text-neutral-900 cursor-pointer hover:bg-lime-500">
-                  Contact me
-                  <ArrowUpRight size={16} />
-                </button>
+                <LinkArrowButton
+                  text="Contact me"
+                  deg={45}
+                  className="bg-brand px-3 py-2 flex items-center gap-1 border border-[rgba(255,255,255,0.12)] rounded-xl text-xs font-semibold leading-[18px] text-neutral-900 cursor-pointer hover:bg-lime-500"
+                >
+                  <ArrowUp size={16} />
+                </LinkArrowButton>
               </Link>
             </div>
             <ul className="flex flex-col gap-2.5">
               <li>
                 <Link href="https://x.com/home" legacyBehavior>
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
-                  >
-                    Twitter
-                    <ArrowUpRight size={16} />
+                  <a target="_blank">
+                    <LinkArrowButton
+                      text="Twitter"
+                      deg={45}
+                      className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
+                    >
+                      <ArrowUp size={16} />
+                    </LinkArrowButton>
                   </a>
                 </Link>
               </li>
@@ -38,34 +44,40 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/thatpollen/"
                   legacyBehavior
                 >
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
-                  >
-                    Linkedin
-                    <ArrowUpRight size={16} />
+                  <a target="_blank">
+                    <LinkArrowButton
+                      text="Linkedin"
+                      deg={45}
+                      className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
+                    >
+                      <ArrowUp size={16} />
+                    </LinkArrowButton>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://dribbble.com/thatpollen" legacyBehavior>
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
-                  >
-                    Dribbble
-                    <ArrowUpRight size={16} />
+                  <a target="_blank">
+                    <LinkArrowButton
+                      text="Discord"
+                      deg={45}
+                      className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
+                    >
+                      <ArrowUp size={16} />
+                    </LinkArrowButton>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://github.com/thatpollen" legacyBehavior>
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
-                  >
-                    Github
-                    <ArrowUpRight size={16} />
+                  <a target="_blank">
+                    <LinkArrowButton
+                      text="Github"
+                      deg={45}
+                      className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
+                    >
+                      <ArrowUp size={16} />
+                    </LinkArrowButton>
                   </a>
                 </Link>
               </li>
@@ -74,12 +86,14 @@ export default function Footer() {
                   href="https://www.upwork.com/freelancers/~01ce9be5982711e917"
                   legacyBehavior
                 >
-                  <a
-                    target="_blank"
-                    className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
-                  >
-                    Upwork
-                    <ArrowUpRight size={16} />
+                  <a target="_blank">
+                    <LinkArrowButton
+                      text="Upwork"
+                      deg={45}
+                      className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
+                    >
+                      <ArrowUp size={16} />
+                    </LinkArrowButton>
                   </a>
                 </Link>
               </li>

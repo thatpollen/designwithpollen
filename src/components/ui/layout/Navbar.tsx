@@ -3,7 +3,8 @@
 import MidContainer from "@/components/ui/layout/MidContainer";
 import NextLink from "next/link";
 import NextImage from "next/image";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowUp } from "lucide-react";
+import { FramerButton } from "../button/FramerButton";
 
 export default function Navbar() {
   return (
@@ -30,7 +31,10 @@ export default function Navbar() {
             {/* Nav right */}
             <div className="nav_right flex flex-row items-center gap-4">
               <div className="text-sm flex items-center gap-2 text-zinc-200">
-                Free design consultation <ArrowRight size={16} />
+                Free design consultation{" "}
+                <FramerButton className="rotate-90 rounded-full">
+                  <ArrowUp size={16} />
+                </FramerButton>
               </div>
               <NextLink
                 href="https://koalendar.com/e/design-consultation-koaHjnin"

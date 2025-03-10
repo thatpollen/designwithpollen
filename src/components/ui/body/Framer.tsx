@@ -3,7 +3,8 @@ import MidContainer from "../layout/MidContainer";
 import NextLink from "next/link";
 import { framerProjects } from "@/devprojects/framer-projects";
 import { Wand } from "lucide-react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { LinkArrowButton } from "../button/LinkArrowButton";
 
 export default function Framer() {
   return (
@@ -27,12 +28,16 @@ export default function Framer() {
               </p>
             </div>
             <NextLink href="/framer-projects">
-              <button className="self-start md:self-end px-3 py-2 rounded-xl border border-zinc-700 text-sm font-medium text-zinc-50 cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
-                View all
-                <ArrowUpRight size={20} />
-              </button>
+              <LinkArrowButton
+                text="View all"
+                deg={45}
+                className="self-start md:self-end px-3 py-2 rounded-xl border border-zinc-700 text-sm font-medium text-zinc-50 cursor-pointer hover:bg-zinc-800 flex items-center gap-1"
+              >
+                <ArrowUp size={20} />
+              </LinkArrowButton>
             </NextLink>
           </div>
+
           <div className="grid grid-cols-1 min-[56rem]:grid-cols-3 gap-3">
             {framerProjects?.slice(0, 3)?.map((project, index) => (
               <div
@@ -72,9 +77,13 @@ export default function Framer() {
                     {/* Preview button */}
                     <NextLink href={`${project?.previewUrl}`} legacyBehavior>
                       <a target="_blank">
-                        <button className="px-3 py-2 rounded-xl text-sm font-medium text-zinc-950 cursor-pointer bg-brand hover:bg-lime-500 flex items-center gap-1">
-                          Preview <ArrowUpRight size={20} />
-                        </button>
+                        <LinkArrowButton
+                          text="Preview"
+                          deg={45}
+                          className="px-3 py-2 rounded-xl text-sm font-medium text-zinc-950 cursor-pointer bg-brand hover:bg-lime-500 flex items-center gap-1"
+                        >
+                          <ArrowUp size={20} />
+                        </LinkArrowButton>
                       </a>
                     </NextLink>
                   </div>

@@ -12,7 +12,8 @@ import NextLink from "next/link";
 import { client } from "../../sanity/lib/client";
 import { unstable_noStore as noStore } from "next/cache";
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { LinkArrowButton } from "@/components/ui/button/LinkArrowButton";
 
 export const dynamic = "force-dynamic";
 
@@ -91,10 +92,13 @@ export default async function Home() {
                         href={`/project/${post?.slug?.current}`}
                         scroll={false}
                       >
-                        <button className="flex items-center gap-1 px-3 py-2 border border-zinc-700 rounded-xl text-sm font-medium text-white cursor-pointer hover:bg-zinc-800 ">
-                          Preview
-                          <ArrowUpRight size={20} />
-                        </button>
+                        <LinkArrowButton
+                          text="Preview"
+                          deg={45}
+                          className="flex items-center gap-1 px-3 py-2 border border-zinc-700 rounded-xl text-sm font-medium text-white cursor-pointer hover:bg-zinc-800 "
+                        >
+                          <ArrowUp size={20} />
+                        </LinkArrowButton>
                       </NextLink>
                     </div>
                   </div>

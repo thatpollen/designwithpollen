@@ -1,7 +1,11 @@
+"use client";
+
 import { DribbbleLogo } from "@/components/icons/Icons";
 import MidContainer from "@/components/ui/layout/MidContainer";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import NextLink from "next/link";
+import { FramerButton } from "../button/FramerButton";
+import { LinkArrowButton } from "../button/LinkArrowButton";
 
 export default function Hero() {
   return (
@@ -29,9 +33,13 @@ export default function Hero() {
               </div>
               <NextLink href="https://dribbble.com/thatpollen" legacyBehavior>
                 <a target="_blank">
-                  <button className="flex items-center gap-1 text-sm font-medium py-2 px-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl outline-1 outline-zinc-800 outline-offset-4 cursor-pointer">
-                    Design concepts <ArrowUpRight size={20} />
-                  </button>
+                  <LinkArrowButton
+                    deg={45}
+                    text="Design concepts"
+                    className="flex items-center gap-1 text-sm font-medium py-2 px-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl outline-1 outline-zinc-800 outline-offset-4 cursor-pointer"
+                  >
+                    <ArrowUp size={20} />
+                  </LinkArrowButton>
                 </a>
               </NextLink>
             </div>

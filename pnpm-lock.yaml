@@ -35,6 +35,9 @@ importers:
       eslint:
         specifier: ^9.22.0
         version: 9.22.0(jiti@2.4.2)
+      framer-motion:
+        specifier: ^12.4.10
+        version: 12.4.10(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lenis:
         specifier: ^1.2.1
         version: 1.2.1(react@18.3.1)
