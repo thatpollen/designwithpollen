@@ -4,7 +4,6 @@ import { DribbbleLogo } from "@/components/icons/Icons";
 import MidContainer from "@/components/ui/layout/MidContainer";
 import { ArrowUp } from "lucide-react";
 import NextLink from "next/link";
-import { FramerButton } from "../button/FramerButton";
 import { LinkArrowButton } from "../button/LinkArrowButton";
 
 export default function Hero() {
