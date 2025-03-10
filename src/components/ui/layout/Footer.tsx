@@ -59,7 +59,7 @@ export default function Footer() {
                 <Link href="https://dribbble.com/thatpollen" legacyBehavior>
                   <a target="_blank">
                     <LinkArrowButton
-                      text="Discord"
+                      text="Dribbble"
                       deg={45}
                       className="flex items-center gap-1 text-sm leading-[18px] text-white hover:text-lime-400"
                     >

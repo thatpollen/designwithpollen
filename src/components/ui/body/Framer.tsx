@@ -52,7 +52,8 @@ export default function Framer() {
                     muted
                     playsInline
                   >
-                    <source src={project?.imgSource} type="video/mp4" />
+                    <source src={project?.webmSource} type="video/mp4" />
+                    <source src={project?.mp4Source} type="video/mp4" />
                   </video>
                 </figure>
                 <div className="px-4 py-6 flex flex-col items-start gap-4">

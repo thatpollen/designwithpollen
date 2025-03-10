@@ -1,11 +1,11 @@
 import { framerProjects } from "@/devprojects/framer-projects";
 import NextLink from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import MidContainer from "@/components/ui/layout/MidContainer";
-import { FramerIcon } from "lucide-react";
+import { FramerIcon, ArrowUp, Wand } from "lucide-react";
 import Navbar from "@/components/ui/layout/Navbar";
 import Footer from "@/components/ui/layout/Footer";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
+import { LinkArrowButton } from "@/components/ui/button/LinkArrowButton";
 
 export default function FramerProject() {
   return (
@@ -40,13 +40,14 @@ export default function FramerProject() {
                 >
                   <figure className="aspect-3/2">
                     <video
-                      className="max-w-full w-full h-full"
+                      className="max-w-full w-auto h-auto"
                       autoPlay
                       loop
                       muted
                       playsInline
                     >
-                      <source src={project?.imgSource} type="video/mp4" />
+                      <source src={project?.webmSource} type="video/mp4" />
+                      <source src={project?.mp4Source} type="video/mp4" />
                     </video>
                   </figure>
                   <div className="p-6 flex flex-col items-start gap-4">
@@ -58,12 +59,29 @@ export default function FramerProject() {
                         year {project?.projectYear}
                       </span>
                     </div>
-                    <NextLink href={`${project?.url}`}>
-                      <button className="px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
-                        Live link
-                        <ArrowUpRight size={16} />
-                      </button>
-                    </NextLink>
+                    {/* Between buttons */}
+                    <div className="flex justify-between items-center w-full">
+                      {/* Remix button */}
+                      <NextLink href={`${project?.url}`} legacyBehavior>
+                        <a target="_blank">
+                          <button className="px-3 py-2 rounded-xl text-sm font-medium text-white cursor-pointer flex items-center gap-1 border border-zinc-800 hover:bg-zinc-800">
+                            <Wand size={20} /> Remix
+                          </button>
+                        </a>
+                      </NextLink>
+                      {/* Preview button */}
+                      <NextLink href={`${project?.previewUrl}`} legacyBehavior>
+                        <a target="_blank">
+                          <LinkArrowButton
+                            text="Preview"
+                            deg={45}
+                            className="px-3 py-2 rounded-xl text-sm font-medium text-zinc-950 cursor-pointer bg-brand hover:bg-lime-500 flex items-center gap-1"
+                          >
+                            <ArrowUp size={20} />
+                          </LinkArrowButton>
+                        </a>
+                      </NextLink>
+                    </div>
                   </div>
                 </div>
               ))}

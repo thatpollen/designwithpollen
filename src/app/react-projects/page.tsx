@@ -1,11 +1,12 @@
 import { reactProjects } from "@/devprojects/react-projects";
 import NextLink from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import MidContainer from "@/components/ui/layout/MidContainer";
 import CustomCursor from "@/components/ui/assets/CustomCursor";
 import Navbar from "@/components/ui/layout/Navbar";
 import { ReactIcon } from "@/components/icons/Icons";
 import Footer from "@/components/ui/layout/Footer";
+import { LinkArrowButton } from "@/components/ui/button/LinkArrowButton";
 
 export default function ReactProject() {
   return (
@@ -58,10 +59,13 @@ export default function ReactProject() {
                       </span>
                     </div>
                     <NextLink href={`${project?.url}`}>
-                      <button className="px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1">
-                        Live link
-                        <ArrowUpRight size={16} />
-                      </button>
+                      <LinkArrowButton
+                        text="Live link"
+                        deg={45}
+                        className="px-3 py-2 rounded-xl border border-[rgba(255,255,255,0.12)] text-xs font-medium text-white cursor-pointer hover:bg-zinc-800 flex items-center gap-1"
+                      >
+                        <ArrowUp size={16} />
+                      </LinkArrowButton>
                     </NextLink>
                   </div>
                 </div>
