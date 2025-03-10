@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
             {/* CTA */}
             <div className="flex self-center items-center gap-4 pt-6 relative">
-              <div className="absolute top-0.5 left-1/2 -translate-x-1/2 z-1">
+              <div className="hidden absolute top-0.5 left-1/2 -translate-x-1/2 z-1">
                 <DribbbleLogo />
               </div>
               <NextLink href="https://dribbble.com/thatpollen" legacyBehavior>

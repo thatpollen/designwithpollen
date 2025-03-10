@@ -37,15 +37,15 @@ export default function DesignSystem() {
                 </h2>
                 <p className="text-sm font-medium text-neutral-300 leading-normal relative">
                   This design system is a toolkit I created to make designing{" "}
-                  <span className="text-zinc-950 whitespace-nowrap px-1 py-0.5 bg-brand rounded-sm">
+                  <span className="text-zinc-950 whitespace-nowrap px-1 py-px bg-brand rounded-sm">
                     websites
                   </span>
                   {"  "}
-                  <span className="text-zinc-950 whitespace-nowrap px-1 py-0.5 bg-brand rounded-sm">
+                  <span className="text-zinc-950 whitespace-nowrap px-1 py-px bg-brand rounded-sm">
                     web apps
                   </span>{" "}
                   and{"  "}
-                  <span className="text-zinc-950 whitespace-nowrap px-1 py-0.5 bg-brand rounded-sm">
+                  <span className="text-zinc-950 whitespace-nowrap px-1 py-px bg-brand rounded-sm">
                     mobile apps
                   </span>
                   {"  "}
