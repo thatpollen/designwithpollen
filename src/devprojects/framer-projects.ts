@@ -22,7 +22,7 @@ export const framerProjects: FramerProjectProps[] = [
     previewUrl: "https://weekly-shares-433142.framer.app",
   },
   {
-    name: "SeoGaeilge – Irish Language",
+    name: "SeoGaeilge Irish Language Resources",
     projectYear: "2025",
     mp4Source: "/mp4/framer-3.mp4",
     url: "",
