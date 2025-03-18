@@ -44,7 +44,7 @@ export default function Framer() {
                 className="rounded-3xl overflow-hidden bg-neutral-900"
                 key={index}
               >
-                <figure className="aspect-3/2">
+                <figure className="aspect-3/2 overflow-hidden">
                   <video
                     className="max-w-full w-auto h-auto"
                     autoPlay
@@ -52,7 +52,6 @@ export default function Framer() {
                     muted
                     playsInline
                   >
-                    <source src={project?.webmSource} type="video/mp4" />
                     <source src={project?.mp4Source} type="video/mp4" />
                   </video>
                 </figure>
