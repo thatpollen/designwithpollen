@@ -21,10 +21,7 @@ export default function DesignSystem() {
                   muted
                   playsInline
                 >
-                  <source
-                    src="/webm/Design-system.webm"
-                    type="video/mp4"
-                  ></source>
+                  <source type="video/mp4"></source>
                   <source
                     src="/mp4/Design-system.mp4"
                     type="video/mp4"
