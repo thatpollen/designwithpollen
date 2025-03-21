@@ -47,7 +47,7 @@ export default function AboutDialog({ isOpen, setIsOpen }: AboutDialogProps) {
                   </div>
                   <p className="text-base">
                     Hello there! I&apos;m Pollen Chakma, a product designer and
-                    front-end developer from Rangamati, near the India and
+                    front-end developer from Rangamati, BD, near the India and
                     Myanmar border.
                   </p>
 

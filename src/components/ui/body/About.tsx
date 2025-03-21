@@ -64,7 +64,7 @@ export default function About() {
             <h2 className="text-2xl font-semibold font-inter">About me</h2>
             <p className="text-sm font-medium leading-normal text-neutral-300">
               Hello there! I&apos;m Pollen Chakma, a product designer and
-              front-end developer from Rangamati, near the India and Myanmar
+              front-end developer from Rangamati, BD, near the India and Myanmar
               border. My journey started about 10 years ago as an email
               developer through freelance work. Three years later, I
               transitioned into UX/UI design. Recently, I&apos;ve expanded my
