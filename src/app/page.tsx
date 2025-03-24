@@ -1,6 +1,7 @@
 import Navbar from "@/components/ui/layout/Navbar";
 import Hero from "@/components/ui/body/Hero";
 import About from "@/components/ui/body/About";
+import DesignConcepts from "@/components/ui/body/DesignConcepts";
 import Framer from "@/components/ui/body/Framer";
 import DesignSystem from "@/components/ui/body/DesignSystem";
 import Works from "@/components/ui/body/Works";
@@ -46,6 +47,7 @@ export default async function Home() {
         <Navbar />
         <Hero />
         <About />
+        <DesignConcepts />
         <Framer />
         <DesignSystem />
         {/* <ReactNext /> */}
