@@ -60,7 +60,7 @@ export default function DesignSystem() {
               </div>
 
               <a
-                href="https://www.figma.com/design/mslBI8UuPBd9KT3wO6aTMr/designwithpollen-DS?node-id=914-733&t=xq5wzH8TbzH2NHYQ-1"
+                href="https://www.figma.com/design/q8McTMTUxyIwJFk1wif0Jx/designwithpollen-DS?node-id=914-733&t=IS8to8PTLMmdZJGx-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
