@@ -15,27 +15,27 @@ import { DesignConceptsLogo } from "@/components/icons/Icons";
 
 const images = [
   // Desktop
-  { id: 1, image: "/glimpse/biga-landing.png", width: 1344, height: 956 },
+  { id: 1, image: "/glimpse/biga-landing.png", width: 563, height: 400 },
   // Mobile
-  { id: 2, image: "/glimpse/evm-wallet.jpg", width: 440, height: 956 },
+  { id: 2, image: "/glimpse/evm-wallet.jpg", width: 184, height: 400 },
   // Desktop
   {
     id: 3,
     image: "/glimpse/trade-smarter.jpg",
-    width: 1344,
-    height: 956,
+    width: 563,
+    height: 400,
   },
   // Mobile
-  { id: 4, image: "/glimpse/unwynd-home.png", width: 440, height: 956 },
+  { id: 4, image: "/glimpse/unwynd-home.png", width: 184, height: 400 },
   // Desktop
   {
     id: 5,
     image: "/glimpse/depin-concept.png",
-    width: 1344,
-    height: 956,
+    width: 563,
+    height: 400,
   },
   // Mobile
-  { id: 6, image: "/glimpse/evm-nft.png", width: 440, height: 956 },
+  { id: 6, image: "/glimpse/evm-nft.png", width: 184, height: 400 },
 ];
 
 export default function DesignConcepts() {
