@@ -34,7 +34,7 @@ export default function DesignConcepts() {
   );
 
   return (
-    <section className="pt-24 pb-12 space-y-12">
+    <section className="pt-48 pb-12 space-y-12">
       <MidContainer>
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-2.5">
