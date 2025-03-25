@@ -117,4 +117,23 @@ const DribbbleLogo = () => {
   );
 };
 
-export { ReactIcon, FigmaLogo, BookingIcon, DribbbleLogo };
+const DesignConceptsLogo = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="25"
+    fill="none"
+    viewBox="0 0 24 25"
+  >
+    <path
+      stroke="#BCED0A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M7.802 10.5H5.198A2.2 2.2 0 0 1 3 8.302V5.698C3 4.484 3.984 3.5 5.198 3.5h2.604C9.016 3.5 10 4.484 10 5.698v2.604A2.2 2.2 0 0 1 7.802 10.5M18.802 21.5h-2.604A2.2 2.2 0 0 1 14 19.302v-2.604c0-1.214.984-2.198 2.198-2.198h2.604c1.214 0 2.198.984 2.198 2.198v2.604a2.2 2.2 0 0 1-2.198 2.198M6.5 14.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M14.96 9.764h5.283A.756.756 0 0 0 20.9 8.63l-2.64-4.613a.757.757 0 0 0-1.313 0L14.304 8.63a.758.758 0 0 0 .657 1.134"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
+
+export { ReactIcon, FigmaLogo, BookingIcon, DribbbleLogo, DesignConceptsLogo };
