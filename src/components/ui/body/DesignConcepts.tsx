@@ -39,15 +39,15 @@ export default function DesignConcepts() {
               </h2>
             </div>
             <p className="text-sm text-neutral-400">
-              Here’s a little peek at what I’ve been creating lately—hope you
-              enjoy!
+              Here&apos;s a little peek at what I&apos;ve been creating
+              lately—hope you enjoy!
             </p>
           </div>
           <div></div>
         </div>
       </MidContainer>
-      <div className="max-w-[1920px] mx-auto px-6">
-        <div className="w-full h-[400px]">
+      <div className="max-w-[1920px] mx-auto">
+        <div className="w-full h-[480px]">
           <Carousel
             opts={{ loop: true, align: "start" }}
             plugins={[autoplayPlugin.current]}
