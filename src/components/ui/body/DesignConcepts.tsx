@@ -14,12 +14,18 @@ import { useRef } from "react";
 import { DesignConceptsLogo } from "@/components/icons/Icons";
 
 const images = [
-  { id: 1, image: "/design1.jpg", width: 550, height: 392 },
-  { id: 2, image: "/design2.jpg", width: 180, height: 392 },
-  { id: 3, image: "/design1.jpg", width: 550, height: 392 },
-  { id: 4, image: "/design2.jpg", width: 180, height: 392 },
-  { id: 5, image: "/design1.jpg", width: 550, height: 392 },
-  { id: 6, image: "/design2.jpg", width: 180, height: 392 },
+  // Desktop
+  { id: 1, image: "/biga-landing.png", width: 1440, height: 1024 },
+  // Mobile
+  { id: 2, image: "/evm-wallet.jpg", width: 440, height: 956 },
+  // Desktop
+  { id: 3, image: "/trade-smarter.jpg", width: 1440, height: 1024 },
+  // Mobile
+  { id: 4, image: "/unwynd-home.png", width: 440, height: 956 },
+  // Desktop
+  { id: 5, image: "/depin-concept.png", width: 1440, height: 1024 },
+  // Mobile
+  { id: 6, image: "/evm-nft.png", width: 440, height: 956 },
 ];
 
 export default function DesignConcepts() {
