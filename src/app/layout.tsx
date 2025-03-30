@@ -4,6 +4,7 @@ import SmoothScroll from "@/components/scroll/SmoothScroll";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { inter } from "@/lib/utils/fonts";
 import Loader from "@/components/ui/assets/Loader";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Product Designer and Developer",
@@ -53,6 +54,7 @@ export default function RootLayout({
           {children}
           {modal}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
