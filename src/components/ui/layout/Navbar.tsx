@@ -37,7 +37,7 @@ export default function Navbar() {
                 </FramerButton>
               </div>
               <NextLink
-                href="https://koalendar.com/e/design-consultation-koaHjnin"
+                href="https://calendar.app.google/U1ggAfpHSUZgstKAA"
                 legacyBehavior
               >
                 <a target="_blank">
