@@ -16,10 +16,6 @@ export default function Hero() {
               <span className="font-playwrite text-base leading-6 text-brand text-center">
                 10 years in tech
               </span>
-              <div className="w-px h-auto bg-[rgba(255,255,255,0.12)]"></div>
-              <span className="font-playwrite text-base leading-6 text-brand text-center">
-                web3 focused
-              </span>
             </div>
             <h1 className="text-5xl sm:text-6xl leading-[1] text-center font-semibold text-neutral-50">
               Product Designer <br />

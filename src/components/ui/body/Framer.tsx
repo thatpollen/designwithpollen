@@ -65,28 +65,6 @@ export default function Framer() {
                     </span>
                   </div>
                   {/* Between buttons */}
-                  <div className="flex justify-between items-center w-full">
-                    {/* Remix button */}
-                    <NextLink href={`${project?.url}`} legacyBehavior>
-                      <a target="_blank">
-                        <button className="px-3 py-2 rounded-xl text-sm font-medium text-white cursor-pointer flex items-center gap-1 border border-zinc-800 hover:bg-zinc-800">
-                          <Wand size={20} /> Remix
-                        </button>
-                      </a>
-                    </NextLink>
-                    {/* Preview button */}
-                    <NextLink href={`${project?.previewUrl}`} legacyBehavior>
-                      <a target="_blank">
-                        <LinkArrowButton
-                          text="Preview"
-                          deg={45}
-                          className="px-3 py-2 rounded-xl text-sm font-medium text-zinc-950 cursor-pointer bg-brand hover:bg-lime-500 flex items-center gap-1"
-                        >
-                          <ArrowUp size={20} />
-                        </LinkArrowButton>
-                      </a>
-                    </NextLink>
-                  </div>
                 </div>
               </div>
             ))}
